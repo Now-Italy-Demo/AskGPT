@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="38dfd5951b7ce1105a344339cd4bcb82" label="ChatGPT_BrowserAPI_ConversationID" max_length="40" name="x_snc_askgpt_chatgpt_browserapi_conversationid" type="collection">
+        <element label="Conversation ID" max_length="512" name="conversation_id" type="string"/>
+        <element label="Last Response ID" max_length="512" name="last_response_id" type="string"/>
+        <element label="Prompt" max_length="8000" name="prompt" type="string"/>
+        <element label="Response" max_length="8000" name="response" type="string"/>
+        <element label="Training Context" max_length="512" name="training_context" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:04:56</sys_created_on>
+        <sys_id>55202d591b7ce1105a344339cd4bcb10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_askgpt_chatgpt_browserapi_conversationid.x_snc_askgpt.chatgpt_browserapi_conversationid_user</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_security_acl display_value="x_snc_askgpt_chatgpt_browserapi_conversationid">1d202d591b7ce1105a344339cd4bcb0c</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_55202d591b7ce1105a344339cd4bcb10</sys_update_name>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:04:56</sys_updated_on>
+        <sys_user_role display_value="x_snc_askgpt.chatgpt_browserapi_conversationid_user" name="x_snc_askgpt.chatgpt_browserapi_conversationid_user">24202d951b7ce1105a344339cd4bcb3b</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

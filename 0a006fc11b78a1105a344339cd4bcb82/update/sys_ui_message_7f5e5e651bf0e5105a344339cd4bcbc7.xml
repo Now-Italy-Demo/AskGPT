@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application>Virtual Agent</application>
+        <code/>
+        <commented_message/>
+        <key>serve altro?</key>
+        <language>en</language>
+        <message>Serve altro?</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-03 22:15:18</sys_created_on>
+        <sys_id>7f5e5e651bf0e5105a344339cd4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>serve altro?</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_ui_message_7f5e5e651bf0e5105a344339cd4bcbc7</sys_update_name>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-03 22:15:18</sys_updated_on>
+        <u_display_sys_id/>
+    </sys_ui_message>
+</record_update>

@@ -1,0 +1,1631 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Manage conversation with ChatGPT via Browser API</description>
+        <internal_name>chatgpt_browserapi_conversation</internal_name>
+        <label_cache>[{"name":"flow_variable.respid","label":"Flow Variables➛RespID","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f05ecc67-5fe1-4613-81d2-22b468aaddd6"}},{"name":"eddc1dc2-5edf-4c54-a114-f642801b0426.conversation_id","label":"3 - ChatGPT_BrowserAPI➛Conversation ID","reference_display":"Conversation ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"8ad3152b-7de4-47dd-936f-d5bfb4431503"}},{"name":"subflow.parent_id","label":"Input➛Parent ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"67dee0b6-fd77-4548-9ba7-93e86e71b3d3","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.prompt","label":"Input➛Prompt","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"36c6f203-89df-4ab6-9210-70618da56dcb","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"eddc1dc2-5edf-4c54-a114-f642801b0426.response_id","label":"3 - ChatGPT_BrowserAPI➛Response ID","reference_display":"Response ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"987e9470-5484-450b-b534-930d81b0b21f"}},{"name":"eddc1dc2-5edf-4c54-a114-f642801b0426.response","label":"3 - ChatGPT_BrowserAPI➛Response","reference_display":"Response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"6fb75262-18b9-4d36-946b-31c218a41edb"}},{"name":"flow_variable.convid","label":"Flow Variables➛ConvID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ef0a14f4-2d4f-4bb9-b5cb-3622b37c83ac"}},{"name":"flow_variable.training","label":"Flow Variables➛Training","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f0af7a6-3c57-4424-aa5a-fde1c09408bf"}},{"name":"subflow.training_context","label":"Input➛Training Context","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8c5c309e-629f-4a99-83ae-fd9b13aaffbb","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.conversation_id","label":"Input➛Conversation ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5c1314d3-5d11-4b0c-ac8a-12d1e6c455d8","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"64c66627-1a3a-4eba-8a40-e4942294d0eb.response","label":"8 - ChatGPT_BrowserAPI➛Response","reference_display":"Response","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"6fb75262-18b9-4d36-946b-31c218a41edb"}},{"name":"64c66627-1a3a-4eba-8a40-e4942294d0eb.response_id","label":"8 - ChatGPT_BrowserAPI➛Response ID","reference_display":"Response ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"987e9470-5484-450b-b534-930d81b0b21f"}},{"name":"64c66627-1a3a-4eba-8a40-e4942294d0eb.conversation_id","label":"8 - ChatGPT_BrowserAPI➛Conversation ID","reference_display":"Conversation ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"8ad3152b-7de4-47dd-936f-d5bfb4431503"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>ChatGPT_BrowserAPI_Conversation</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:10:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>23716d1d1b7ce1105a344339cd4bcb73</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>ChatGPT_BrowserAPI_Conversation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_hub_flow_23716d1d1b7ce1105a344339cd4bcb73</sys_update_name>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:48:49</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=23716d1d1b7ce1105a344339cd4bcb73"/>
+    <sys_variable_value action="delete_multiple" query="document_key=23716d1d1b7ce1105a344339cd4bcb73"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73^id=23716d1d1b7ce1105a344339cd4bcb73"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=23716d1d1b7ce1105a344339cd4bcb73"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=23716d1d1b7ce1105a344339cd4bcb73"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=23716d1d1b7ce1105a344339cd4bcb73^sys_idNOT INa3716d1d1b7ce1105a344339cd4bcb74"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>23716d1d1b7ce1105a344339cd4bcb73</id>
+        <name>ChatGPT_BrowserAPI_Conversation</name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:10:50</sys_created_on>
+        <sys_id>a3716d1d1b7ce1105a344339cd4bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:10:50</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a3716d1d1b7ce1105a344339cd4bcb74"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=23716d1d1b7ce1105a344339cd4bcb73^sys_idNOT INbbc1299d1b7ce1105a344339cd4bcbd9,c8d1299d1b7ce1105a344339cd4bcbec,fbc1299d1b7ce1105a344339cd4bcbd4,ffc1299d1b7ce1105a344339cd4bcbdc"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5c1314d3-5d11-4b0c-ac8a-12d1e6c455d8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>conversation_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Conversation ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</model>
+        <model_id>23716d1d1b7ce1105a344339cd4bcb73</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_23716d1d1b7ce1105a344339cd4bcb73</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:12:13</sys_created_on>
+        <sys_id>bbc1299d1b7ce1105a344339cd4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:12:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=67dee0b6-fd77-4548-9ba7-93e86e71b3d3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>parent_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Parent ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</model>
+        <model_id>23716d1d1b7ce1105a344339cd4bcb73</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_23716d1d1b7ce1105a344339cd4bcb73</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:12:13</sys_created_on>
+        <sys_id>c8d1299d1b7ce1105a344339cd4bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:12:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=36c6f203-89df-4ab6-9210-70618da56dcb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>prompt</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Prompt</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</model>
+        <model_id>23716d1d1b7ce1105a344339cd4bcb73</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_23716d1d1b7ce1105a344339cd4bcb73</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:12:13</sys_created_on>
+        <sys_id>fbc1299d1b7ce1105a344339cd4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:12:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=8c5c309e-629f-4a99-83ae-fd9b13aaffbb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>training_context</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Training Context</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</model>
+        <model_id>23716d1d1b7ce1105a344339cd4bcb73</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_23716d1d1b7ce1105a344339cd4bcb73</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:12:13</sys_created_on>
+        <sys_id>ffc1299d1b7ce1105a344339cd4bcbdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:12:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=23716d1d1b7ce1105a344339cd4bcb73^sys_idNOT IN00d1299d1b7ce1105a344339cd4bcbf3,88d1299d1b7ce1105a344339cd4bcbf7,ccd1299d1b7ce1105a344339cd4bcbfa"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=549e3ae9-b8c3-4d9a-a19d-3414ff90f6ce</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</model>
+        <model_id>23716d1d1b7ce1105a344339cd4bcb73</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:12:13</sys_created_on>
+        <sys_id>00d1299d1b7ce1105a344339cd4bcbf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:12:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=991ae079-0882-436e-af2c-409786eca631</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>conversation_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Conversation ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</model>
+        <model_id>23716d1d1b7ce1105a344339cd4bcb73</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:12:14</sys_created_on>
+        <sys_id>88d1299d1b7ce1105a344339cd4bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:12:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=04228bed-422a-468f-a672-c56df0cfb10a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Response ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</model>
+        <model_id>23716d1d1b7ce1105a344339cd4bcb73</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:12:14</sys_created_on>
+        <sys_id>ccd1299d1b7ce1105a344339cd4bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:12:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=23716d1d1b7ce1105a344339cd4bcb73"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=23716d1d1b7ce1105a344339cd4bcb73^sys_idNOT IN6778e1dd1bbce1105a344339cd4bcbd8,a378e1dd1bbce1105a344339cd4bcbf8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="ChatGPT_BrowserAPI">b5f32dd11bbce1105a344339cd4bcbc5</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</flow>
+        <order>3</order>
+        <parent_ui_id>78642fea-724d-43d9-8ce4-4f8f45a582b2</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:24</sys_created_on>
+        <sys_id>6778e1dd1bbce1105a344339cd4bcbd8</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:48:48</sys_updated_on>
+        <ui_id>eddc1dc2-5edf-4c54-a114-f642801b0426</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6778e1dd1bbce1105a344339cd4bcbd8"/>
+    <sys_element_mapping action="delete_multiple" query="id=6778e1dd1bbce1105a344339cd4bcbd8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>prompt</field>
+        <id>6778e1dd1bbce1105a344339cd4bcbd8</id>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:24</sys_created_on>
+        <sys_id>2b78e1dd1bbce1105a344339cd4bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:41:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b5f32dd11bbce1105a344339cd4bcbc5</table>
+        <value>{{flow_variable.training}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6778e1dd1bbce1105a344339cd4bcbd8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6778e1dd1bbce1105a344339cd4bcbd8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="ChatGPT_BrowserAPI">b5f32dd11bbce1105a344339cd4bcbc5</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</flow>
+        <order>8</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:25</sys_created_on>
+        <sys_id>a378e1dd1bbce1105a344339cd4bcbf8</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:48:48</sys_updated_on>
+        <ui_id>64c66627-1a3a-4eba-8a40-e4942294d0eb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a378e1dd1bbce1105a344339cd4bcbf8"/>
+    <sys_element_mapping action="delete_multiple" query="id=a378e1dd1bbce1105a344339cd4bcbf8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conversation_id</field>
+        <id>a378e1dd1bbce1105a344339cd4bcbf8</id>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:25</sys_created_on>
+        <sys_id>a778e1dd1bbce1105a344339cd4bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:41:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b5f32dd11bbce1105a344339cd4bcbc5</table>
+        <value>{{flow_variable.convid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>parent_id</field>
+        <id>a378e1dd1bbce1105a344339cd4bcbf8</id>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:25</sys_created_on>
+        <sys_id>6b78e1dd1bbce1105a344339cd4bcbf9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:48:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b5f32dd11bbce1105a344339cd4bcbc5</table>
+        <value>{{flow_variable.respid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>prompt</field>
+        <id>a378e1dd1bbce1105a344339cd4bcbf8</id>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:25</sys_created_on>
+        <sys_id>e378e1dd1bbce1105a344339cd4bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:41:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b5f32dd11bbce1105a344339cd4bcbc5</table>
+        <value>{{subflow.prompt}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a378e1dd1bbce1105a344339cd4bcbf8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a378e1dd1bbce1105a344339cd4bcbf8"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=23716d1d1b7ce1105a344339cd4bcb73"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=23716d1d1b7ce1105a344339cd4bcb73^sys_idNOT IN6778e1dd1bbce1105a344339cd4bcbe4,6f78e1dd1bbce1105a344339cd4bcbdb,90c82ddd1bbce1105a344339cd4bcb0f,ac32e5dd1b7ce1105a344339cd4bcbb5,c4b325d11bbce1105a344339cd4bcb9a,eb78e1dd1bbce1105a344339cd4bcbe0,ef78e1dd1bbce1105a344339cd4bcbe8"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">af78e1dd1bbce1105a344339cd4bcbe3</block>
+        <comment/>
+        <connected_to>78642fea-724d-43d9-8ce4-4f8f45a582b2</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:24</sys_created_on>
+        <sys_id>6778e1dd1bbce1105a344339cd4bcbe4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:48:48</sys_updated_on>
+        <ui_id>01772ab9-42bd-4780-91f6-2efa0ac1693c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6778e1dd1bbce1105a344339cd4bcbe4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>6778e1dd1bbce1105a344339cd4bcbe4</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:25</sys_created_on>
+        <sys_id>a378e1dd1bbce1105a344339cd4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:41:25</sys_updated_on>
+        <value>Existing conversation</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_23716d1d1b7ce1105a344339cd4bcb73^id=6778e1dd1bbce1105a344339cd4bcbe4"/>
+    <sys_element_mapping action="delete_multiple" query="id=6778e1dd1bbce1105a344339cd4bcbe4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>6778e1dd1bbce1105a344339cd4bcbe4</id>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:25</sys_created_on>
+        <sys_id>2378e1dd1bbce1105a344339cd4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:41:25</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{subflow.conversation_id}}!=</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>6778e1dd1bbce1105a344339cd4bcbe4</id>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:25</sys_created_on>
+        <sys_id>6f78e1dd1bbce1105a344339cd4bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:41:25</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73^id=6778e1dd1bbce1105a344339cd4bcbe4"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6778e1dd1bbce1105a344339cd4bcbe4"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6778e1dd1bbce1105a344339cd4bcbe4"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">6378e1dd1bbce1105a344339cd4bcbdb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>78642fea-724d-43d9-8ce4-4f8f45a582b2</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:24</sys_created_on>
+        <sys_id>6f78e1dd1bbce1105a344339cd4bcbdb</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:48:48</sys_updated_on>
+        <ui_id>3ca02622-74e4-48da-a704-2419c2f6bcaa</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6f78e1dd1bbce1105a344339cd4bcbdb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>6f78e1dd1bbce1105a344339cd4bcbdb</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:24</sys_created_on>
+        <sys_id>2b78e1dd1bbce1105a344339cd4bcbdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:41:24</sys_updated_on>
+        <value>Check API was succesful</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_23716d1d1b7ce1105a344339cd4bcb73^id=6f78e1dd1bbce1105a344339cd4bcbdb"/>
+    <sys_element_mapping action="delete_multiple" query="id=6f78e1dd1bbce1105a344339cd4bcbdb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>6f78e1dd1bbce1105a344339cd4bcbdb</id>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:24</sys_created_on>
+        <sys_id>a778e1dd1bbce1105a344339cd4bcbdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:41:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{eddc1dc2-5edf-4c54-a114-f642801b0426.response_id}}!=</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>6f78e1dd1bbce1105a344339cd4bcbdb</id>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:24</sys_created_on>
+        <sys_id>e378e1dd1bbce1105a344339cd4bcbdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:41:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73^id=6f78e1dd1bbce1105a344339cd4bcbdb"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6f78e1dd1bbce1105a344339cd4bcbdb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6f78e1dd1bbce1105a344339cd4bcbdb"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">94c82ddd1bbce1105a344339cd4bcb0e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned>response,conversation_id,response_id</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:42:34</sys_created_on>
+        <sys_id>90c82ddd1bbce1105a344339cd4bcb0f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:48:49</sys_updated_on>
+        <ui_id>6acec8c9-9045-4a83-b99e-066fffe76e28</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=90c82ddd1bbce1105a344339cd4bcb0f"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_23716d1d1b7ce1105a344339cd4bcb73^id=90c82ddd1bbce1105a344339cd4bcb0f"/>
+    <sys_element_mapping action="delete_multiple" query="id=90c82ddd1bbce1105a344339cd4bcb0f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conversation_id</field>
+        <id>90c82ddd1bbce1105a344339cd4bcb0f</id>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:42:34</sys_created_on>
+        <sys_id>50c82ddd1bbce1105a344339cd4bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:42:34</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73</table>
+        <value>{{64c66627-1a3a-4eba-8a40-e4942294d0eb.conversation_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>90c82ddd1bbce1105a344339cd4bcb0f</id>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:42:34</sys_created_on>
+        <sys_id>98c82ddd1bbce1105a344339cd4bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:42:34</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73</table>
+        <value>{{64c66627-1a3a-4eba-8a40-e4942294d0eb.response}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response_id</field>
+        <id>90c82ddd1bbce1105a344339cd4bcb0f</id>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:42:34</sys_created_on>
+        <sys_id>14c82ddd1bbce1105a344339cd4bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:42:34</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73</table>
+        <value>{{64c66627-1a3a-4eba-8a40-e4942294d0eb.response_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=90c82ddd1bbce1105a344339cd4bcb0f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=90c82ddd1bbce1105a344339cd4bcb0f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">a032e5dd1b7ce1105a344339cd4bcbb5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:13:54</sys_created_on>
+        <sys_id>ac32e5dd1b7ce1105a344339cd4bcbb5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:48:48</sys_updated_on>
+        <ui_id>78642fea-724d-43d9-8ce4-4f8f45a582b2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ac32e5dd1b7ce1105a344339cd4bcbb5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ac32e5dd1b7ce1105a344339cd4bcbb5</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:13:54</sys_created_on>
+        <sys_id>e432e5dd1b7ce1105a344339cd4bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:13:54</sys_updated_on>
+        <value>Is a new conversation to be trained</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_23716d1d1b7ce1105a344339cd4bcb73^id=ac32e5dd1b7ce1105a344339cd4bcbb5"/>
+    <sys_element_mapping action="delete_multiple" query="id=ac32e5dd1b7ce1105a344339cd4bcbb5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>ac32e5dd1b7ce1105a344339cd4bcbb5</id>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:13:54</sys_created_on>
+        <sys_id>6432e5dd1b7ce1105a344339cd4bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:13:54</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{subflow.conversation_id}}=^{{subflow.training_context}}!= </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>ac32e5dd1b7ce1105a344339cd4bcbb5</id>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:13:54</sys_created_on>
+        <sys_id>ac32e5dd1b7ce1105a344339cd4bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:13:54</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73^id=ac32e5dd1b7ce1105a344339cd4bcbb5"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ac32e5dd1b7ce1105a344339cd4bcbb5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ac32e5dd1b7ce1105a344339cd4bcbb5"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c8b325d11bbce1105a344339cd4bcb99</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</flow>
+        <flow_variable/>
+        <flow_variables_assigned>training</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>78642fea-724d-43d9-8ce4-4f8f45a582b2</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:20:25</sys_created_on>
+        <sys_id>c4b325d11bbce1105a344339cd4bcb9a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:48:48</sys_updated_on>
+        <ui_id>608095e2-7b54-46ae-82d2-833d6ca9299d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c4b325d11bbce1105a344339cd4bcb9a"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_23716d1d1b7ce1105a344339cd4bcb73^id=c4b325d11bbce1105a344339cd4bcb9a"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73^id=c4b325d11bbce1105a344339cd4bcb9a"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c4b325d11bbce1105a344339cd4bcb9a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c4b325d11bbce1105a344339cd4bcb9a^sys_idNOT INc8b325d11bbce1105a344339cd4bcb9b"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>training</input_name>
+        <instance>c4b325d11bbce1105a344339cd4bcb9a</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"training":{"scriptActive":true,"script":"var context \u003d fd_data.subflow_inputs.training_context;\nvar preT \u003d new GlideRecord(\u0027x_snc_askgpt_chatgpt_pretraining\u0027);\n\nvar learning \u003d \"\";\n\npreT.addQuery(\u0027context\u0027, context); \npreT.orderBy(\u0027updated\u0027);\npreT.query();\n\nwhile( preT.next() ) {\n    learning \u003d learning + preT.getValue(\u0027prompt\u0027) + \u0027 \u0027 + preT.getValue(\u0027completion\u0027) + \u0027 \u0027;\n}\n\nif( learning !\u003d \"\" ) \n    return \u0027Impara quanto segue: \u0027 + learning;\nelse\n    return \"\";\n"}}</script>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:20:25</sys_created_on>
+        <sys_id>c8b325d11bbce1105a344339cd4bcb9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:20:25</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2778e1dd1bbce1105a344339cd4bcbe0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>convid,respid</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>3ca02622-74e4-48da-a704-2419c2f6bcaa</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:24</sys_created_on>
+        <sys_id>eb78e1dd1bbce1105a344339cd4bcbe0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:48:48</sys_updated_on>
+        <ui_id>e52d6087-11b4-4b28-a2ee-4f801ed8b88b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=eb78e1dd1bbce1105a344339cd4bcbe0"/>
+    <sys_element_mapping action="delete_multiple" query="id=eb78e1dd1bbce1105a344339cd4bcbe0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>convid</field>
+        <id>eb78e1dd1bbce1105a344339cd4bcbe0</id>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:24</sys_created_on>
+        <sys_id>6b78e1dd1bbce1105a344339cd4bcbe3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:48:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_23716d1d1b7ce1105a344339cd4bcb73</table>
+        <value>{{eddc1dc2-5edf-4c54-a114-f642801b0426.conversation_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>respid</field>
+        <id>eb78e1dd1bbce1105a344339cd4bcbe0</id>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:48:15</sys_created_on>
+        <sys_id>ff0a61d11bfce1105a344339cd4bcb93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:48:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_23716d1d1b7ce1105a344339cd4bcb73</table>
+        <value>{{eddc1dc2-5edf-4c54-a114-f642801b0426.response_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73^id=eb78e1dd1bbce1105a344339cd4bcbe0"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=eb78e1dd1bbce1105a344339cd4bcbe0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=eb78e1dd1bbce1105a344339cd4bcbe0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2b78e1dd1bbce1105a344339cd4bcbe8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>convid,respid</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>01772ab9-42bd-4780-91f6-2efa0ac1693c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:25</sys_created_on>
+        <sys_id>ef78e1dd1bbce1105a344339cd4bcbe8</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:48:48</sys_updated_on>
+        <ui_id>591f0b04-9dec-41f3-95a8-5750e5e27bf6</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ef78e1dd1bbce1105a344339cd4bcbe8"/>
+    <sys_element_mapping action="delete_multiple" query="id=ef78e1dd1bbce1105a344339cd4bcbe8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>convid</field>
+        <id>ef78e1dd1bbce1105a344339cd4bcbe8</id>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:41:25</sys_created_on>
+        <sys_id>2b78e1dd1bbce1105a344339cd4bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:41:25</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_23716d1d1b7ce1105a344339cd4bcb73</table>
+        <value>{{subflow.conversation_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>respid</field>
+        <id>ef78e1dd1bbce1105a344339cd4bcbe8</id>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:48:15</sys_created_on>
+        <sys_id>f30a61d11bfce1105a344339cd4bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:48:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_23716d1d1b7ce1105a344339cd4bcb73</table>
+        <value>{{subflow.parent_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73^id=ef78e1dd1bbce1105a344339cd4bcbe8"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ef78e1dd1bbce1105a344339cd4bcbe8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ef78e1dd1bbce1105a344339cd4bcbe8"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=23716d1d1b7ce1105a344339cd4bcb73"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=23716d1d1b7ce1105a344339cd4bcb73^sys_idNOT IN0cb325d11bbce1105a344339cd4bcb8c,7fa325d11bbce1105a344339cd4bcb87,a30a61d11bfce1105a344339cd4bcb71"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5f0af7a6-3c57-4424-aa5a-fde1c09408bf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>training</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Training</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</model>
+        <model_id>23716d1d1b7ce1105a344339cd4bcb73</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_23716d1d1b7ce1105a344339cd4bcb73</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:20:25</sys_created_on>
+        <sys_id>0cb325d11bbce1105a344339cd4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Training</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_0cb325d11bbce1105a344339cd4bcb8c</sys_update_name>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:20:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ef0a14f4-2d4f-4bb9-b5cb-3622b37c83ac</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>convid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>ConvID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</model>
+        <model_id>23716d1d1b7ce1105a344339cd4bcb73</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_23716d1d1b7ce1105a344339cd4bcb73</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:20:25</sys_created_on>
+        <sys_id>7fa325d11bbce1105a344339cd4bcb87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ConvID</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_7fa325d11bbce1105a344339cd4bcb87</sys_update_name>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:20:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f05ecc67-5fe1-4613-81d2-22b468aaddd6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>respid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>RespID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="ChatGPT_BrowserAPI_Conversation">23716d1d1b7ce1105a344339cd4bcb73</model>
+        <model_id>23716d1d1b7ce1105a344339cd4bcb73</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_23716d1d1b7ce1105a344339cd4bcb73</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:48:14</sys_created_on>
+        <sys_id>a30a61d11bfce1105a344339cd4bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RespID</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_a30a61d11bfce1105a344339cd4bcb71</sys_update_name>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:48:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_23716d1d1b7ce1105a344339cd4bcb73^sys_idNOT IN33c1299d1b7ce1105a344339cd4bcbdc,40d1299d1b7ce1105a344339cd4bcbef,fbc1299d1b7ce1105a344339cd4bcbd8,44d1299d1b7ce1105a344339cd4bcbdf"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>conversation_id</element>
+        <help/>
+        <hint/>
+        <label>Conversation ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_23716d1d1b7ce1105a344339cd4bcb73</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:12:13</sys_created_on>
+        <sys_id>33c1299d1b7ce1105a344339cd4bcbdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:12:13</sys_updated_on>
+        <u_display_sys_id/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>parent_id</element>
+        <help/>
+        <hint/>
+        <label>Parent ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_23716d1d1b7ce1105a344339cd4bcb73</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:12:13</sys_created_on>
+        <sys_id>40d1299d1b7ce1105a344339cd4bcbef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:12:13</sys_updated_on>
+        <u_display_sys_id/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>prompt</element>
+        <help/>
+        <hint/>
+        <label>Prompt</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_23716d1d1b7ce1105a344339cd4bcb73</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:12:13</sys_created_on>
+        <sys_id>fbc1299d1b7ce1105a344339cd4bcbd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:12:13</sys_updated_on>
+        <u_display_sys_id/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>training_context</element>
+        <help/>
+        <hint/>
+        <label>Training Context</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_23716d1d1b7ce1105a344339cd4bcb73</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:12:13</sys_created_on>
+        <sys_id>44d1299d1b7ce1105a344339cd4bcbdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:12:13</sys_updated_on>
+        <u_display_sys_id/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_23716d1d1b7ce1105a344339cd4bcb73"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73^sys_idNOT IN00d1299d1b7ce1105a344339cd4bcbfa,c8d1299d1b7ce1105a344339cd4bcbf6,44d1299d1b7ce1105a344339cd4bcbfd"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>conversation_id</element>
+        <help/>
+        <hint/>
+        <label>Conversation ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:12:14</sys_created_on>
+        <sys_id>00d1299d1b7ce1105a344339cd4bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:12:14</sys_updated_on>
+        <u_display_sys_id/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>Response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:12:14</sys_created_on>
+        <sys_id>c8d1299d1b7ce1105a344339cd4bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:12:14</sys_updated_on>
+        <u_display_sys_id/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response_id</element>
+        <help/>
+        <hint/>
+        <label>Response ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 23:12:14</sys_created_on>
+        <sys_id>44d1299d1b7ce1105a344339cd4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 23:12:14</sys_updated_on>
+        <u_display_sys_id/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_23716d1d1b7ce1105a344339cd4bcb73"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=23716d1d1b7ce1105a344339cd4bcb73"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=23716d1d1b7ce1105a344339cd4bcb73"/>
+</record_update>

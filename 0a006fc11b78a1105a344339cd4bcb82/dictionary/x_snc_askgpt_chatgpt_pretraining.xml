@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b1a06b491b78a1105a344339cd4bcb7d" label="ChatGPT PreTraining" max_length="40" name="x_snc_askgpt_chatgpt_pretraining" type="collection">
+        <element label="Completion" max_length="4096" name="completion" type="string"/>
+        <element default="ServiceNow Italia" label="Context" max_length="512" name="context" type="string"/>
+        <element label="Prompt" max_length="1024" name="prompt" type="string"/>
+    </element>
+</database>

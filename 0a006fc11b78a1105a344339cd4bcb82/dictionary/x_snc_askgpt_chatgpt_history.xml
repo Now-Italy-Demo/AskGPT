@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="84f17f851b3ca1105a344339cd4bcb01" label="ChatGPT History" max_length="40" name="x_snc_askgpt_chatgpt_history" type="collection">
+        <element label="Context" max_length="512" name="context" type="string"/>
+        <element label="Conversation ID" max_length="48" name="conversation_id" type="string"/>
+        <element label="History JSON" max_length="16000" name="history_json" type="string"/>
+    </element>
+</database>

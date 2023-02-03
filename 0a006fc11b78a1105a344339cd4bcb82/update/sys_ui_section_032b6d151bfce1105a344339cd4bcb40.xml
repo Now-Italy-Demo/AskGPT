@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="032b6d151bfce1105a344339cd4bcb40" sys_domain="global" table="x_snc_askgpt_chatgpt_browserapi_conversationid" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>conversation_id</element>
+            <position>0</position>
+            <sys_created_by>antonio.rizzi</sys_created_by>
+            <sys_created_on>2023-02-02 23:53:08</sys_created_on>
+            <sys_id>d72b6d151bfce1105a344339cd4bcb48</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_askgpt_chatgpt_browserapi_conversationid" sys_domain="global" view="Default view">032b6d151bfce1105a344339cd4bcb40</sys_ui_section>
+            <sys_updated_by>antonio.rizzi</sys_updated_by>
+            <sys_updated_on>2023-02-02 23:53:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_response_id</element>
+            <position>1</position>
+            <sys_created_by>antonio.rizzi</sys_created_by>
+            <sys_created_on>2023-02-02 23:53:08</sys_created_on>
+            <sys_id>5f2b6d151bfce1105a344339cd4bcb48</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_askgpt_chatgpt_browserapi_conversationid" sys_domain="global" view="Default view">032b6d151bfce1105a344339cd4bcb40</sys_ui_section>
+            <sys_updated_by>antonio.rizzi</sys_updated_by>
+            <sys_updated_on>2023-02-02 23:53:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>prompt</element>
+            <position>2</position>
+            <sys_created_by>antonio.rizzi</sys_created_by>
+            <sys_created_on>2023-02-02 23:53:08</sys_created_on>
+            <sys_id>df2b6d151bfce1105a344339cd4bcb48</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_askgpt_chatgpt_browserapi_conversationid" sys_domain="global" view="Default view">032b6d151bfce1105a344339cd4bcb40</sys_ui_section>
+            <sys_updated_by>antonio.rizzi</sys_updated_by>
+            <sys_updated_on>2023-02-02 23:53:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>response</element>
+            <position>3</position>
+            <sys_created_by>antonio.rizzi</sys_created_by>
+            <sys_created_on>2023-02-02 23:53:08</sys_created_on>
+            <sys_id>972b69951bfce1105a344339cd4bcb6a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_askgpt_chatgpt_browserapi_conversationid" sys_domain="global" view="Default view">032b6d151bfce1105a344339cd4bcb40</sys_ui_section>
+            <sys_updated_by>antonio.rizzi</sys_updated_by>
+            <sys_updated_on>2023-02-02 23:53:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>training_context</element>
+            <position>4</position>
+            <sys_created_by>antonio.rizzi</sys_created_by>
+            <sys_created_on>2023-02-02 23:53:08</sys_created_on>
+            <sys_id>1b2b69951bfce1105a344339cd4bcb6a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_askgpt_chatgpt_browserapi_conversationid" sys_domain="global" view="Default view">032b6d151bfce1105a344339cd4bcb40</sys_ui_section>
+            <sys_updated_by>antonio.rizzi</sys_updated_by>
+            <sys_updated_on>2023-02-02 23:53:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_snc_askgpt_chatgpt_browserapi_conversationid</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>antonio.rizzi</sys_created_by>
+            <sys_created_on>2023-02-02 23:53:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>032b6d151bfce1105a344339cd4bcb40</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_askgpt_chatgpt_browserapi_conversationid</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+            <sys_update_name>sys_ui_section_032b6d151bfce1105a344339cd4bcb40</sys_update_name>
+            <sys_updated_by>antonio.rizzi</sys_updated_by>
+            <sys_updated_on>2023-02-02 23:53:08</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
