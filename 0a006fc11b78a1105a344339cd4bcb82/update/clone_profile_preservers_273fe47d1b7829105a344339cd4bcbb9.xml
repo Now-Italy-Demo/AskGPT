@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="clone_profile_preservers">
+    <clone_profile_preservers action="INSERT_OR_UPDATE">
+        <clone_profile>912f647d1b7829105a344339cd4bcb5e</clone_profile>
+        <preserver display_value="Secret Group with Criteria">395d6f1d771301106b84a81f7f5a99e7</preserver>
+        <profile display_value="full">912f647d1b7829105a344339cd4bcb5e</profile>
+        <profile_name>full</profile_name>
+        <source_table>clone_profile</source_table>
+        <sys_class_name>clone_profile_preservers</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-04 08:48:15</sys_created_on>
+        <sys_id>273fe47d1b7829105a344339cd4bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>clone_profile_preservers_273fe47d1b7829105a344339cd4bcbb9</sys_update_name>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-04 08:48:15</sys_updated_on>
+    </clone_profile_preservers>
+</record_update>

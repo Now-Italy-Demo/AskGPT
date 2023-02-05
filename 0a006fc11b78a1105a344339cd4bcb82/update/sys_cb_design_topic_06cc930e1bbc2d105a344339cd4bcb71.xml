@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="Ask AI (ServiceNow Italy)">42cc930e1bbc2d105a344339cd4bcb6b</compiled_topic>
+        <design_definition>{"type":"FlowTopic","type":"FlowTopic","triggers":[{"type":"Trigger","name":"e480f020d1a34bd6a1c892898dfba806","triggerType":"request","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"id":"e480f020d1a34bd6a1c892898dfba806"}],"goals":[{"name":"primary","trigger_id":"e480f020d1a34bd6a1c892898dfba806","nodes":[{"type":"StartGoal","type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Hi! I'm here to help on life at ServiceNow Italy.\", vaContext.getRequesterLang())"},"id":"5011bf6968e84def99ce5552d814a96c","name":"Start"},{"type":"TerminateGoal","type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Have a great day!\", vaContext.getRequesterLang())"},"id":"6e5c1bc6c073470488ebd894577aee87","name":"End"},{"type":"InputPrompt","type":"InputPrompt","variable_id":"9fcd95fce4394a09916aeae4ebd8cfa5","message":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"What do you need?\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"skippable":{"type":"Applicability","type":"Applicability","mode":"script","value":"false"},"id":"6ce8239b22f84f399dfd80527db71939","name":"Opening Question","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"formatType":"Text","validationScript":""},{"type":"ScriptedAction","type":"ScriptedAction","script":"(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n\n    try {\n\t\tvar inputs = {};\n\t\tinputs['temperature'] = '0.8'; // String \n\t\tinputs['context'] = 'ServiceNow Italy (eng)'; // String \n\t\tinputs['conversation_id'] = vaVars.Conversation_ID ; // String \n\t\tinputs['prompt'] = vaVars.Prompt;\n\n\t\t// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.\n\t\t// sn_fd.FlowAPI.getRunner().subflow('x_snc_askgpt.chatcpt_contextual_conversation').inBackground().withInputs(inputs).run();\n\t\t\t\t\n\t\t// Execute Synchronously: Run in foreground. Code snippet has access to outputs.\n\t\tvar result = sn_fd.FlowAPI.getRunner().subflow('x_snc_askgpt.chatcpt_contextual_conversation').inForeground().withInputs(inputs).run();\n\t\tvar outputs = result.getOutputs();\n\n\t\t// Get Outputs:\n\t\t// Note: outputs can only be retrieved when executing synchronously.\n\t\tvar response = outputs['response']; // String\n\t\tvar conversation_id = outputs['conversation_id']; // String\n\n\t\tvaVars.Conversation_ID = conversation_id;\n\t\tvaVars.Response = response;\n\t\t\n\t} catch (ex) {\n\t\tvar message = ex.getMessage();\n\t\tgs.error(message);\n\t}\n\t\n})()\n","id":"9e09cd8703924fcfbeeb598d0e8c3d1e","name":"ChatGPT Convesation SubFlow","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}},{"type":"TextOutputPrompt","type":"TextOutputPrompt","value":[{"type":"String","type":"String","mode":"string","value":"{{vaVars.Response}}"}],"id":"876adfbf3fe34690bbf4dec9f8a79c32","name":"Provide answer","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"secure":false},{"type":"InputPrompt","type":"InputPrompt","variable_id":"441969e9082b40c988968d4b0fafa908","message":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Anything else?\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"skippable":{"type":"Applicability","type":"Applicability","mode":"script","value":"false"},"id":"ccce3b07f3734fc7932e6054376803b6","name":"Anything else?","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"formatType":"Text","validationScript":""},{"type":"Decision","type":"Decision","name":"Parse response","branches":[{"type":"Branch","type":"Branch","label":"No","expression":{"type":"Applicability","type":"Applicability","mode":"query","value":"anything_else_=no^ORvaInputs.anything_else_=nothing^ORvaInputs.anything_else_=bye^ORvaInputs.anything_else_STARTSWITHno thanks"},"id":"9511f3f8de704729abf47d79ec0c7f36","name":"No"},{"type":"Branch","type":"Branch","label":"Yes","expression":{"type":"Applicability","type":"Applicability","mode":"query","value":"anything_else_!=no^anything_else_!=nothing^anything_else_!=bye^anything_else_!=no thanks"},"id":"eb382eb09812487ca3a0e1f022b51450","name":"Yes"}],"id":"dc8f41e703ed48fcb0f8e33edac44b13","goal_id":"primary"},{"type":"ScriptedAction","type":"ScriptedAction","script":"(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n\n    vaVars.Prompt = vaInputs.anything_else_.getValue();\n})()\n","id":"281486149ff74bbb97f2a48c5c58034a","name":"Populate Prompt from Anything else","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}},{"type":"ScriptedAction","type":"ScriptedAction","script":"(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n\n    vaVars.Prompt = vaInputs.opening_question;\n})()\n","id":"ea12483e772b43daae628508e9ba9d91","name":"Populate Promp","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}}],"edges":[{"type":"Edge","source_node_id":"5011bf6968e84def99ce5552d814a96c","target_node_id":"6ce8239b22f84f399dfd80527db71939","id":"d84ceb21698d4ec38414dd09490597ec"},{"type":"Edge","source_node_id":"9e09cd8703924fcfbeeb598d0e8c3d1e","target_node_id":"876adfbf3fe34690bbf4dec9f8a79c32","id":"c303757a6ebb48ae94d992897894fc9d"},{"type":"Edge","source_node_id":"876adfbf3fe34690bbf4dec9f8a79c32","target_node_id":"ccce3b07f3734fc7932e6054376803b6","id":"427ab4bc4c4c489a97a9794aa7fc5aa4"},{"type":"Edge","source_node_id":"ccce3b07f3734fc7932e6054376803b6","target_node_id":"dc8f41e703ed48fcb0f8e33edac44b13","id":"f964af015844470f86eb464649d09326"},{"type":"Edge","source_node_id":"dc8f41e703ed48fcb0f8e33edac44b13","target_node_id":"6e5c1bc6c073470488ebd894577aee87","branch_id":"9511f3f8de704729abf47d79ec0c7f36","id":"8811be2094654e3b964706210e38c5c1","name":"9511f3f8de704729abf47d79ec0c7f36"},{"type":"Edge","source_node_id":"dc8f41e703ed48fcb0f8e33edac44b13","target_node_id":"281486149ff74bbb97f2a48c5c58034a","branch_id":"eb382eb09812487ca3a0e1f022b51450","id":"4f087701640d4955942cfe8ddfc6a45d","name":"eb382eb09812487ca3a0e1f022b51450"},{"type":"Edge","source_node_id":"281486149ff74bbb97f2a48c5c58034a","target_node_id":"9e09cd8703924fcfbeeb598d0e8c3d1e","id":"4442b8c8f8a04a9591c08d20445cffff"},{"type":"Edge","source_node_id":"6ce8239b22f84f399dfd80527db71939","target_node_id":"ea12483e772b43daae628508e9ba9d91","id":"b9826a3d19bb498fb900aacb4375f938"},{"type":"Edge","source_node_id":"ea12483e772b43daae628508e9ba9d91","target_node_id":"9e09cd8703924fcfbeeb598d0e8c3d1e","id":"d96af061f727483b99cb4c40a6779cbe"}],"id":"primary"}],"script_variables":[{"type":"VariableDto","type":"String","name":"Conversation_ID","value":{"type":"String","type":"String","mode":"string"},"list":false,"id":"1a02c896c0314104b121fea65310afcc","formatType":"text","secure":false,"sensitive":false},{"type":"VariableDto","type":"String","name":"Response","value":{"type":"String","type":"String","mode":"string"},"list":false,"id":"bf3a632781e7435caaabf6354d525155","formatType":"text","secure":false,"sensitive":false},{"type":"VariableDto","type":"String","name":"Prompt","value":{"type":"String","type":"String","mode":"string"},"list":false,"id":"0a8271cc3ea84ee7944f4b08b651ec33","formatType":"text","secure":false,"sensitive":false}],"glide_variables":[{"type":"Reference","type":"Reference","table":"sys_user","id":"b98c801cdb354ce3a9079ca206a292b8","name":"user","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"VariableDto","type":"String","name":"opening_question","list":false,"id":"9fcd95fce4394a09916aeae4ebd8cfa5","formatType":"Text","validationScript":"","secure":false,"sensitive":false},{"type":"VariableDto","type":"String","name":"anything_else_","list":false,"id":"441969e9082b40c988968d4b0fafa908","formatType":"Text","validationScript":"","secure":false,"sensitive":false}],"applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"0a006fc11b78a1105a344339cd4bcb82","domain":"global","topic_type":"SETUP_TOPIC","channels":[],"id":"5966ee421bf42d105a344339cd4bcb68","name":"Ask AI (ServiceNow Italy)","key_phrases":["Ask AI (ServiceNow Italy)","Ask SalesOps AI","Ask AI (ChatGPT)","chatgpt"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"library":false,"readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>5966ee421bf42d105a344339cd4bcb68</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.41",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "5011bf6968e84def99ce5552d814a96c": {
+          "id": "5011bf6968e84def99ce5552d814a96c",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hi! I'm here to help on life at ServiceNow Italy."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "6e5c1bc6c073470488ebd894577aee87": {
+          "id": "6e5c1bc6c073470488ebd894577aee87",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Have a great day!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "6ce8239b22f84f399dfd80527db71939": {
+          "id": "6ce8239b22f84f399dfd80527db71939",
+          "stepType": "Prompt",
+          "name": "Opening Question",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "What do you need?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "9fcd95fce4394a09916aeae4ebd8cfa5",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        },
+        "9e09cd8703924fcfbeeb598d0e8c3d1e": {
+          "id": "9e09cd8703924fcfbeeb598d0e8c3d1e",
+          "name": "ChatGPT Convesation SubFlow",
+          "script": "(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n\n    try {\n\t\tvar inputs = {};\n\t\tinputs['temperature'] = '0.8'; // String \n\t\tinputs['context'] = 'ServiceNow Italy (eng)'; // String \n\t\tinputs['conversation_id'] = vaVars.Conversation_ID ; // String \n\t\tinputs['prompt'] = vaVars.Prompt;\n\n\t\t// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.\n\t\t// sn_fd.FlowAPI.getRunner().subflow('x_snc_askgpt.chatcpt_contextual_conversation').inBackground().withInputs(inputs).run();\n\t\t\t\t\n\t\t// Execute Synchronously: Run in foreground. Code snippet has access to outputs.\n\t\tvar result = sn_fd.FlowAPI.getRunner().subflow('x_snc_askgpt.chatcpt_contextual_conversation').inForeground().withInputs(inputs).run();\n\t\tvar outputs = result.getOutputs();\n\n\t\t// Get Outputs:\n\t\t// Note: outputs can only be retrieved when executing synchronously.\n\t\tvar response = outputs['response']; // String\n\t\tvar conversation_id = outputs['conversation_id']; // String\n\n\t\tvaVars.Conversation_ID = conversation_id;\n\t\tvaVars.Response = response;\n\t\t\n\t} catch (ex) {\n\t\tvar message = ex.getMessage();\n\t\tgs.error(message);\n\t}\n\t\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "876adfbf3fe34690bbf4dec9f8a79c32": {
+          "id": "876adfbf3fe34690bbf4dec9f8a79c32",
+          "stepType": "TextOutput",
+          "name": "Provide answer",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaVars.Response}}",
+                        "displayValue": "Script Variables➛Response"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "6a5ddcecad034a39a3b6708f51db0384"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "ccce3b07f3734fc7932e6054376803b6": {
+          "id": "ccce3b07f3734fc7932e6054376803b6",
+          "stepType": "Prompt",
+          "name": "Anything else?",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Anything else?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "441969e9082b40c988968d4b0fafa908",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        },
+        "dc8f41e703ed48fcb0f8e33edac44b13": {
+          "id": "dc8f41e703ed48fcb0f8e33edac44b13",
+          "stepType": "Decision",
+          "name": "Parse response"
+        },
+        "281486149ff74bbb97f2a48c5c58034a": {
+          "id": "281486149ff74bbb97f2a48c5c58034a",
+          "name": "Populate Prompt from Anything else",
+          "script": "(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n\n    vaVars.Prompt = vaInputs.anything_else_.getValue();\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "ea12483e772b43daae628508e9ba9d91": {
+          "id": "ea12483e772b43daae628508e9ba9d91",
+          "name": "Populate Promp",
+          "script": "(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n\n    vaVars.Prompt = vaInputs.opening_question;\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "d84ceb21698d4ec38414dd09490597ec",
+          "edgeType": "Edge",
+          "source": "5011bf6968e84def99ce5552d814a96c",
+          "target": "6ce8239b22f84f399dfd80527db71939",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c303757a6ebb48ae94d992897894fc9d",
+          "edgeType": "Edge",
+          "source": "9e09cd8703924fcfbeeb598d0e8c3d1e",
+          "target": "876adfbf3fe34690bbf4dec9f8a79c32",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "427ab4bc4c4c489a97a9794aa7fc5aa4",
+          "edgeType": "Edge",
+          "source": "876adfbf3fe34690bbf4dec9f8a79c32",
+          "target": "ccce3b07f3734fc7932e6054376803b6",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "f964af015844470f86eb464649d09326",
+          "edgeType": "Edge",
+          "source": "ccce3b07f3734fc7932e6054376803b6",
+          "target": "dc8f41e703ed48fcb0f8e33edac44b13",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "8811be2094654e3b964706210e38c5c1",
+          "edgeType": "Branch",
+          "source": "dc8f41e703ed48fcb0f8e33edac44b13",
+          "target": "6e5c1bc6c073470488ebd894577aee87",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.anything_else_=no^ORvaInputs.anything_else_=nothing^ORvaInputs.anything_else_=bye^ORvaInputs.anything_else_STARTSWITHno thanks",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "4f087701640d4955942cfe8ddfc6a45d",
+          "edgeType": "Branch",
+          "source": "dc8f41e703ed48fcb0f8e33edac44b13",
+          "target": "281486149ff74bbb97f2a48c5c58034a",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.anything_else_!=no^vaInputs.anything_else_!=nothing^vaInputs.anything_else_!=bye^vaInputs.anything_else_!=no thanks",
+            "mode": "query"
+          },
+          "label": "Yes"
+        },
+        {
+          "id": "4442b8c8f8a04a9591c08d20445cffff",
+          "edgeType": "Edge",
+          "source": "281486149ff74bbb97f2a48c5c58034a",
+          "target": "9e09cd8703924fcfbeeb598d0e8c3d1e",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "b9826a3d19bb498fb900aacb4375f938",
+          "edgeType": "Edge",
+          "source": "6ce8239b22f84f399dfd80527db71939",
+          "target": "ea12483e772b43daae628508e9ba9d91",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "d96af061f727483b99cb4c40a6779cbe",
+          "edgeType": "Edge",
+          "source": "ea12483e772b43daae628508e9ba9d91",
+          "target": "9e09cd8703924fcfbeeb598d0e8c3d1e",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "b98c801cdb354ce3a9079ca206a292b8": {
+      "category": "vaInputs",
+      "id": "b98c801cdb354ce3a9079ca206a292b8",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "9fcd95fce4394a09916aeae4ebd8cfa5": {
+      "id": "9fcd95fce4394a09916aeae4ebd8cfa5",
+      "name": "opening_question",
+      "label": "Opening Question",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTY3NTQ1MTg5MDc3NiBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
+    },
+    "1a02c896c0314104b121fea65310afcc": {
+      "id": "1a02c896c0314104b121fea65310afcc",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "Conversation_ID",
+      "label": "Conversation_ID",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "bf3a632781e7435caaabf6354d525155": {
+      "id": "bf3a632781e7435caaabf6354d525155",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "Response",
+      "label": "Response",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "441969e9082b40c988968d4b0fafa908": {
+      "id": "441969e9082b40c988968d4b0fafa908",
+      "name": "anything_else_",
+      "label": "Anything Else?",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTY3NTQ2MjA2MjIxMyBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
+    },
+    "0a8271cc3ea84ee7944f4b08b651ec33": {
+      "id": "0a8271cc3ea84ee7944f4b08b651ec33",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "Prompt",
+      "label": "Prompt",
+      "varType": "script",
+      "category": "vaVars"
+    }
+  }
+}</graph>
+        <name>Ask AI (ServiceNow Italy)</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-05 16:04:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>06cc930e1bbc2d105a344339cd4bcb71</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_cb_design_topic_06cc930e1bbc2d105a344339cd4bcb71</sys_update_name>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-05 16:05:26</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

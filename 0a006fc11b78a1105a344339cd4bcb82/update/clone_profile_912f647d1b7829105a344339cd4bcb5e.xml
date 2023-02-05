@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="clone_profile">
+    <clone_profile action="INSERT_OR_UPDATE">
+        <amount_of_data_copied_from_large_tables>full</amount_of_data_copied_from_large_tables>
+        <default_profile>false</default_profile>
+        <exclude_all_from_exclusion_list>false</exclude_all_from_exclusion_list>
+        <exclude_large_data>false</exclude_large_data>
+        <filter_attachment_data>false</filter_attachment_data>
+        <name>full</name>
+        <preserve_in_progress_update_sets/>
+        <preserve_theme>false</preserve_theme>
+        <preserve_users_and_related_tables>false</preserve_users_and_related_tables>
+        <sys_class_name>clone_profile</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-04 08:48:14</sys_created_on>
+        <sys_id>912f647d1b7829105a344339cd4bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>full</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>clone_profile_912f647d1b7829105a344339cd4bcb5e</sys_update_name>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-04 08:48:14</sys_updated_on>
+        <target_instance display_value="demoallwf28529">1d6eecf91b7829105a344339cd4bcb4a</target_instance>
+    </clone_profile>
+</record_update>
