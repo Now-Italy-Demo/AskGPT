@@ -21,6 +21,6 @@
         <sys_update_name>clone_profile_912f647d1b7829105a344339cd4bcb5e</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-04 08:48:14</sys_updated_on>
-        <target_instance display_value="demoallwf28529">1d6eecf91b7829105a344339cd4bcb4a</target_instance>
+        <target_instance display_value="">1d6eecf91b7829105a344339cd4bcb4a</target_instance>
     </clone_profile>
 </record_update>

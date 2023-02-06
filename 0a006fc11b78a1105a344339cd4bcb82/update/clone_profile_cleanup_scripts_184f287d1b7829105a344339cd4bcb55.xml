@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="clone_profile_cleanup_scripts">
     <clone_profile_cleanup_scripts action="INSERT_OR_UPDATE">
         <active>true</active>
-        <cleanup_script display_value="Fix MultiSSO IEs">113fe34087741010d00b5773e8cb0b33</cleanup_script>
+        <cleanup_script display_value="">113fe34087741010d00b5773e8cb0b33</cleanup_script>
         <clone_profile>912f647d1b7829105a344339cd4bcb5e</clone_profile>
         <order>100</order>
         <profile display_value="full">912f647d1b7829105a344339cd4bcb5e</profile>

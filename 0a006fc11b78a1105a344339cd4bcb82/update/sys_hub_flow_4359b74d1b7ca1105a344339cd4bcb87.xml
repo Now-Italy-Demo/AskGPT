@@ -29,15 +29,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4359b74d1b7ca1105a344339cd4bcb87</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>ChatCPT_Contextual_Conversation</sys_name>
         <sys_overrides/>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_update_name>sys_hub_flow_4359b74d1b7ca1105a344339cd4bcb87</sys_update_name>
-        <sys_updated_by>antonio.rizzi</sys_updated_by>
-        <sys_updated_on>2023-02-05 11:34:59</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-05 16:10:18</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=4359b74d1b7ca1105a344339cd4bcb87"/>
@@ -574,10 +574,10 @@
         <sys_created_by>antonio.rizzi</sys_created_by>
         <sys_created_on>2023-02-03 17:31:38</sys_created_on>
         <sys_id>247d5dad1bf4a5105a344339cd4bcb5d</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_updated_by>antonio.rizzi</sys_updated_by>
-        <sys_updated_on>2023-02-05 11:41:28</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-05 16:17:43</sys_updated_on>
         <ui_id>97e905ac-ca6b-48db-9f1e-53d720f29969</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=247d5dad1bf4a5105a344339cd4bcb5d"/>
@@ -713,10 +713,10 @@
         <sys_created_by>antonio.rizzi</sys_created_by>
         <sys_created_on>2023-02-03 17:31:38</sys_created_on>
         <sys_id>307d5dad1bf4a5105a344339cd4bcb9e</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_updated_by>antonio.rizzi</sys_updated_by>
-        <sys_updated_on>2023-02-05 11:41:28</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-05 16:17:43</sys_updated_on>
         <ui_id>1ae3ca6a-c80e-424d-96a1-4c59dd8b2706</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=307d5dad1bf4a5105a344339cd4bcb9e"/>
@@ -820,10 +820,10 @@
         <sys_created_by>antonio.rizzi</sys_created_by>
         <sys_created_on>2023-02-03 17:31:39</sys_created_on>
         <sys_id>307d5dad1bf4a5105a344339cd4bcbc2</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_updated_by>antonio.rizzi</sys_updated_by>
-        <sys_updated_on>2023-02-05 11:41:28</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-05 16:17:43</sys_updated_on>
         <ui_id>b99aaf79-e669-4371-8afb-6d4f1b255bf4</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=307d5dad1bf4a5105a344339cd4bcbc2"/>
@@ -895,10 +895,10 @@
         <sys_created_by>antonio.rizzi</sys_created_by>
         <sys_created_on>2023-02-02 16:51:02</sys_created_on>
         <sys_id>549a801d1b30e1105a344339cd4bcbbe</sys_id>
-        <sys_mod_count>56</sys_mod_count>
+        <sys_mod_count>58</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_updated_by>antonio.rizzi</sys_updated_by>
-        <sys_updated_on>2023-02-05 11:41:28</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-05 16:17:43</sys_updated_on>
         <ui_id>d594faed-65f9-4a87-bfc0-20e2211803d7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=549a801d1b30e1105a344339cd4bcbbe"/>
@@ -1021,10 +1021,10 @@
         <sys_created_by>antonio.rizzi</sys_created_by>
         <sys_created_on>2023-02-03 17:31:39</sys_created_on>
         <sys_id>707d5dad1bf4a5105a344339cd4bcbb9</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_updated_by>antonio.rizzi</sys_updated_by>
-        <sys_updated_on>2023-02-05 11:41:28</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-05 16:17:43</sys_updated_on>
         <ui_id>e5ec9409-1524-4be1-a870-ddb890bbfe76</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=707d5dad1bf4a5105a344339cd4bcbb9"/>
@@ -2019,7 +2019,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_variable>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_4359b74d1b7ca1105a344339cd4bcb87^sys_idNOT IN255e730d1bbca1105a344339cd4bcbc2,695e730d1bbca1105a344339cd4bcbc5,315e770d1bbca1105a344339cd4bcbea,7f8a801d1b30e1105a344339cd4bcb36"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_4359b74d1b7ca1105a344339cd4bcb87^sys_idNOT IN255e730d1bbca1105a344339cd4bcbc2,315e770d1bbca1105a344339cd4bcbea,695e730d1bbca1105a344339cd4bcbc5,7f8a801d1b30e1105a344339cd4bcb36"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>context</element>
         <help/>
@@ -2033,38 +2033,13 @@
         <sys_created_on>2023-02-02 15:57:37</sys_created_on>
         <sys_id>255e730d1bbca1105a344339cd4bcbc2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Context</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4359b74d1b7ca1105a344339cd4bcb87_context_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-02 15:57:37</sys_updated_on>
-        <u_display_sys_id/>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>conversation_id</element>
-        <help/>
-        <hint/>
-        <label>Conversation ID</label>
-        <language>en</language>
-        <name>var__m_sys_hub_flow_input_4359b74d1b7ca1105a344339cd4bcb87</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>antonio.rizzi</sys_created_by>
-        <sys_created_on>2023-02-02 15:57:37</sys_created_on>
-        <sys_id>695e730d1bbca1105a344339cd4bcbc5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>antonio.rizzi</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:57:37</sys_updated_on>
-        <u_display_sys_id/>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -2081,14 +2056,36 @@
         <sys_created_on>2023-02-02 15:57:37</sys_created_on>
         <sys_id>315e770d1bbca1105a344339cd4bcbea</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Prompt</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4359b74d1b7ca1105a344339cd4bcb87_prompt_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-02 15:57:37</sys_updated_on>
-        <u_display_sys_id/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>conversation_id</element>
+        <help/>
+        <hint/>
+        <label>Conversation ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4359b74d1b7ca1105a344339cd4bcb87</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 15:57:37</sys_created_on>
+        <sys_id>695e730d1bbca1105a344339cd4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Conversation ID</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4359b74d1b7ca1105a344339cd4bcb87_conversation_id_en</sys_update_name>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 15:57:37</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -2105,43 +2102,18 @@
         <sys_created_on>2023-02-02 16:51:01</sys_created_on>
         <sys_id>7f8a801d1b30e1105a344339cd4bcb36</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Temperature</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4359b74d1b7ca1105a344339cd4bcb87_temperature_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-02 16:51:01</sys_updated_on>
-        <u_display_sys_id/>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4359b74d1b7ca1105a344339cd4bcb87"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_4359b74d1b7ca1105a344339cd4bcb87^sys_idNOT INb95e770d1bbca1105a344339cd4bcbf4,755e770d1bbca1105a344339cd4bcbf1"/>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>conversation_id</element>
-        <help/>
-        <hint/>
-        <label>Conversation ID</label>
-        <language>en</language>
-        <name>var__m_sys_hub_flow_output_4359b74d1b7ca1105a344339cd4bcb87</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>antonio.rizzi</sys_created_by>
-        <sys_created_on>2023-02-02 15:57:37</sys_created_on>
-        <sys_id>b95e770d1bbca1105a344339cd4bcbf4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>antonio.rizzi</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:57:37</sys_updated_on>
-        <u_display_sys_id/>
-        <url/>
-        <url_target/>
-    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_4359b74d1b7ca1105a344339cd4bcb87^sys_idNOT IN755e770d1bbca1105a344339cd4bcbf1,b95e770d1bbca1105a344339cd4bcbf4"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>response</element>
         <help/>
@@ -2155,14 +2127,36 @@
         <sys_created_on>2023-02-02 15:57:37</sys_created_on>
         <sys_id>755e770d1bbca1105a344339cd4bcbf1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Response</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_4359b74d1b7ca1105a344339cd4bcb87_response_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-02 15:57:37</sys_updated_on>
-        <u_display_sys_id/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>conversation_id</element>
+        <help/>
+        <hint/>
+        <label>Conversation ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_4359b74d1b7ca1105a344339cd4bcb87</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-02 15:57:37</sys_created_on>
+        <sys_id>b95e770d1bbca1105a344339cd4bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Conversation ID</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_4359b74d1b7ca1105a344339cd4bcb87_conversation_id_en</sys_update_name>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-02 15:57:37</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -2172,7 +2166,7 @@
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"57457d291b3ca5105a344339cd4bcb49","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="ChatCPT_Contextual_Conversation">4359b74d1b7ca1105a344339cd4bcb87</plan_id>
-        <snapshot>5a702ec61bb42d105a344339cd4bcba4</snapshot>
+        <snapshot>5dbf9b8697fced1085b7b4cfe153af75</snapshot>
         <sys_created_by>antonio.rizzi</sys_created_by>
         <sys_created_on>2023-02-03 19:15:52</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -4189,7 +4183,30 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_variable>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9545b9291b3ca5105a344339cd4bcb8b^sys_idNOT IN6945b9291b3ca5105a344339cd4bcbb0,ed45b9291b3ca5105a344339cd4bcbb8,a545b9291b3ca5105a344339cd4bcbc1,1545b9291b3ca5105a344339cd4bcba8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9545b9291b3ca5105a344339cd4bcb8b^sys_idNOT IN1545b9291b3ca5105a344339cd4bcba8,6945b9291b3ca5105a344339cd4bcbb0,a545b9291b3ca5105a344339cd4bcbc1,ed45b9291b3ca5105a344339cd4bcbb8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>temperature</element>
+        <help/>
+        <hint/>
+        <label>Temperature</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9545b9291b3ca5105a344339cd4bcb8b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-03 19:15:44</sys_created_on>
+        <sys_id>1545b9291b3ca5105a344339cd4bcba8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Temperature</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9545b9291b3ca5105a344339cd4bcb8b_temperature_en</sys_update_name>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-03 19:15:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>context</element>
         <help/>
@@ -4203,38 +4220,13 @@
         <sys_created_on>2023-02-03 19:15:44</sys_created_on>
         <sys_id>6945b9291b3ca5105a344339cd4bcbb0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Context</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9545b9291b3ca5105a344339cd4bcb8b_context_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-03 19:15:44</sys_updated_on>
-        <u_display_sys_id/>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>conversation_id</element>
-        <help/>
-        <hint/>
-        <label>Conversation ID</label>
-        <language>en</language>
-        <name>var__m_sys_hub_flow_input_9545b9291b3ca5105a344339cd4bcb8b</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>antonio.rizzi</sys_created_by>
-        <sys_created_on>2023-02-03 19:15:44</sys_created_on>
-        <sys_id>ed45b9291b3ca5105a344339cd4bcbb8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>antonio.rizzi</sys_updated_by>
-        <sys_updated_on>2023-02-03 19:15:44</sys_updated_on>
-        <u_display_sys_id/>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -4251,67 +4243,41 @@
         <sys_created_on>2023-02-03 19:15:44</sys_created_on>
         <sys_id>a545b9291b3ca5105a344339cd4bcbc1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Prompt</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9545b9291b3ca5105a344339cd4bcb8b_prompt_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-03 19:15:44</sys_updated_on>
-        <u_display_sys_id/>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>temperature</element>
-        <help/>
-        <hint/>
-        <label>Temperature</label>
-        <language>en</language>
-        <name>var__m_sys_hub_flow_input_9545b9291b3ca5105a344339cd4bcb8b</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>antonio.rizzi</sys_created_by>
-        <sys_created_on>2023-02-03 19:15:44</sys_created_on>
-        <sys_id>1545b9291b3ca5105a344339cd4bcba8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>antonio.rizzi</sys_updated_by>
-        <sys_updated_on>2023-02-03 19:15:44</sys_updated_on>
-        <u_display_sys_id/>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9545b9291b3ca5105a344339cd4bcb8b"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_9545b9291b3ca5105a344339cd4bcb8b^sys_idNOT INbd45b9291b3ca5105a344339cd4bcbd5,6945b9291b3ca5105a344339cd4bcbcd"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>conversation_id</element>
         <help/>
         <hint/>
         <label>Conversation ID</label>
         <language>en</language>
-        <name>var__m_sys_hub_flow_output_9545b9291b3ca5105a344339cd4bcb8b</name>
+        <name>var__m_sys_hub_flow_input_9545b9291b3ca5105a344339cd4bcb8b</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>antonio.rizzi</sys_created_by>
-        <sys_created_on>2023-02-03 19:15:45</sys_created_on>
-        <sys_id>bd45b9291b3ca5105a344339cd4bcbd5</sys_id>
+        <sys_created_on>2023-02-03 19:15:44</sys_created_on>
+        <sys_id>ed45b9291b3ca5105a344339cd4bcbb8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Conversation ID</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9545b9291b3ca5105a344339cd4bcb8b_conversation_id_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
-        <sys_updated_on>2023-02-03 19:15:45</sys_updated_on>
-        <u_display_sys_id/>
+        <sys_updated_on>2023-02-03 19:15:44</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9545b9291b3ca5105a344339cd4bcb8b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_9545b9291b3ca5105a344339cd4bcb8b^sys_idNOT IN6945b9291b3ca5105a344339cd4bcbcd,bd45b9291b3ca5105a344339cd4bcbd5"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>response</element>
         <help/>
@@ -4325,14 +4291,36 @@
         <sys_created_on>2023-02-03 19:15:45</sys_created_on>
         <sys_id>6945b9291b3ca5105a344339cd4bcbcd</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Response</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_9545b9291b3ca5105a344339cd4bcb8b_response_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-03 19:15:45</sys_updated_on>
-        <u_display_sys_id/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>conversation_id</element>
+        <help/>
+        <hint/>
+        <label>Conversation ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_9545b9291b3ca5105a344339cd4bcb8b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio.rizzi</sys_created_by>
+        <sys_created_on>2023-02-03 19:15:45</sys_created_on>
+        <sys_id>bd45b9291b3ca5105a344339cd4bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Conversation ID</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_9545b9291b3ca5105a344339cd4bcb8b_conversation_id_en</sys_update_name>
+        <sys_updated_by>antonio.rizzi</sys_updated_by>
+        <sys_updated_on>2023-02-03 19:15:45</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -4340,6 +4328,6 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>4359b74d1b7ca1105a344339cd4bcb87</sys_id>
         <latest_snapshot>9545b9291b3ca5105a344339cd4bcb8b</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch5-hotfix2-01-27-2023_01-28-2023_1255.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch4a-01-03-2023_01-11-2023_0813.zip</compiler_build>
     </sys_hub_flow>
 </record_update>

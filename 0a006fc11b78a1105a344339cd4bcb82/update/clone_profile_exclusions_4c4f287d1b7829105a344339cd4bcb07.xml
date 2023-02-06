@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="clone_profile_exclusions">
     <clone_profile_exclusions action="INSERT_OR_UPDATE">
         <clone_profile>912f647d1b7829105a344339cd4bcb5e</clone_profile>
-        <exclusion display_value="sn_occ_bloom_filters">56a410f3078811100f549d0a0fd300f5</exclusion>
+        <exclusion display_value="">56a410f3078811100f549d0a0fd300f5</exclusion>
         <profile display_value="full">912f647d1b7829105a344339cd4bcb5e</profile>
         <profile_name>full</profile_name>
         <source_table>clone_profile</source_table>

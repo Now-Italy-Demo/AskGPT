@@ -114,7 +114,7 @@
         <update_guid_history>a0f5aa8224f42d101a1e738ffe98abec:-2140876593,e0f5aa8296f42d10b2af61743b359fe8:669446407,68f5aa82b5f42d10106e8381855c20e3:-2140876593</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="User">9a4626c21bf42d105a344339cd4bcb35</sys_audit_delete>
+        <sys_audit_delete display_value="">9a4626c21bf42d105a344339cd4bcb35</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>antonio.rizzi</sys_created_by>
         <sys_created_on>2023-02-05 12:06:50</sys_created_on>

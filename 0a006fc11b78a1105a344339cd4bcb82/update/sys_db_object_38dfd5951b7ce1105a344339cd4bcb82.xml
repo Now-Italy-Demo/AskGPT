@@ -9,7 +9,6 @@
         <create_access>false</create_access>
         <create_access_controls>true</create_access_controls>
         <delete_access>false</delete_access>
-        <is_document_table>false</is_document_table>
         <is_extendable>false</is_extendable>
         <label>ChatGPT_BrowserAPI_ConversationID</label>
         <live_feed_enabled>false</live_feed_enabled>

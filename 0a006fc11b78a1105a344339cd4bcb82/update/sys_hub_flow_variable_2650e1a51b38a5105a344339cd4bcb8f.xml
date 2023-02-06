@@ -38,7 +38,7 @@
         <label>History</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="ChatCPT_Contextual_Conversation">0a50a1a51b38a5105a344339cd4bcbf3</model>
+        <model display_value="">0a50a1a51b38a5105a344339cd4bcbf3</model>
         <model_id>0a50a1a51b38a5105a344339cd4bcbf3</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_0a50a1a51b38a5105a344339cd4bcbf3</name>
