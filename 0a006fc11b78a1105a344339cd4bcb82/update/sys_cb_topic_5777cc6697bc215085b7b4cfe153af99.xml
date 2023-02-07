@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description>Topic per conversazione ChatGPT su Bancoposta Internet Banking</description>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.41",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "99e2b1c9970e47c1b329c593ba3b4dac": {
+          "id": "99e2b1c9970e47c1b329c593ba3b4dac",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Ciao sono qui per fornirti risposte su Internet Banking di BancoPosta."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "c7af83194c7b471c832774333c26a7c6": {
+          "id": "c7af83194c7b471c832774333c26a7c6",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Ti auguro una buona giornata. "
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "efa6139d34624f839b7fab9b26bfcd07": {
+          "id": "efa6139d34624f839b7fab9b26bfcd07",
+          "stepType": "Prompt",
+          "name": "Domanda",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Dimmi pure di cosa hai bisogno."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "9bcb1cfa926a4744a3d4987ad4bc63bd",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        },
+        "ce249784e3aa42de9ae63b728d57e839": {
+          "id": "ce249784e3aa42de9ae63b728d57e839",
+          "name": "ChatGPT Convesation SubFlow",
+          "script": "(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n\n    try {\n\t\tvar inputs = {};\n\t\tinputs['temperature'] = '0.8'; // String \n\t\tinputs['context'] = 'Bancoposta IB'; // String \n\t\tinputs['conversation_id'] = vaVars.Conversation_ID ; // String \n\t\tinputs['prompt'] = vaVars.Prompt;\n\n\t\t// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.\n\t\t// sn_fd.FlowAPI.getRunner().subflow('x_snc_askgpt.chatcpt_contextual_conversation').inBackground().withInputs(inputs).run();\n\t\t\t\t\n\t\t// Execute Synchronously: Run in foreground. Code snippet has access to outputs.\n\t\tvar result = sn_fd.FlowAPI.getRunner().subflow('x_snc_askgpt.chatcpt_contextual_conversation').inForeground().withInputs(inputs).run();\n\t\tvar outputs = result.getOutputs();\n\n\t\t// Get Outputs:\n\t\t// Note: outputs can only be retrieved when executing synchronously.\n\t\tvar response = outputs['response']; // String\n\t\tvar conversation_id = outputs['conversation_id']; // String\n\n\t\t//vaVars.Conversation_ID = conversation_id;\n\t\tvaVars.Response = response;\n\t\t\n\t} catch (ex) {\n\t\tvar message = ex.getMessage();\n\t\tgs.error(message);\n\t}\n\t\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "20a1444612ec4a14994ab83972b62087": {
+          "id": "20a1444612ec4a14994ab83972b62087",
+          "stepType": "TextOutput",
+          "name": "Risposta",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaVars.Response}}",
+                        "displayValue": "Script Variables➛Response"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "6a5ddcecad034a39a3b6708f51db0384"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "b0d614fa5cd344e993c911f0140c1ea8": {
+          "id": "b0d614fa5cd344e993c911f0140c1ea8",
+          "stepType": "Decision",
+          "name": "Decisione"
+        },
+        "5d8cf496d8ef4085ac240af8807e155c": {
+          "id": "5d8cf496d8ef4085ac240af8807e155c",
+          "name": "Populate Prompt",
+          "script": "(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n\n     vaVars.Prompt = vaInputs.domanda;\n\n\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "56561b379bf24528893d2f1e69a69ce8": {
+          "id": "56561b379bf24528893d2f1e69a69ce8",
+          "stepType": "Prompt",
+          "name": "Serve altro?",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Serve altro?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "c195d3ef9d3a48bdac1a691f57ea5632",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        },
+        "0f930382677444e3adafe61c952b9dd6": {
+          "id": "0f930382677444e3adafe61c952b9dd6",
+          "name": "Populate Prompt",
+          "script": "(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n\n    vaVars.Prompt = vaInputs.serve_altro_;\n\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "d6fde57c584e4f0cb8b7938baf3cf557",
+          "edgeType": "Edge",
+          "source": "20a1444612ec4a14994ab83972b62087",
+          "target": "56561b379bf24528893d2f1e69a69ce8",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "094dccb2493a4cceab08b195a583e27b",
+          "edgeType": "Edge",
+          "source": "99e2b1c9970e47c1b329c593ba3b4dac",
+          "target": "efa6139d34624f839b7fab9b26bfcd07",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "a9559ab4f89c4df4af4a0e7dab66a867",
+          "edgeType": "Edge",
+          "source": "ce249784e3aa42de9ae63b728d57e839",
+          "target": "20a1444612ec4a14994ab83972b62087",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "58d6b117e8a04412abb4d52238d3f606",
+          "edgeType": "Branch",
+          "source": "b0d614fa5cd344e993c911f0140c1ea8",
+          "target": "c7af83194c7b471c832774333c26a7c6",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.serve_altro_=no^ORvaInputs.serve_altro_=ciao^ORvaInputs.serve_altro_=no grazie",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "096a8b01c1b44af2b5426373ab9cc66a",
+          "edgeType": "Edge",
+          "source": "efa6139d34624f839b7fab9b26bfcd07",
+          "target": "5d8cf496d8ef4085ac240af8807e155c",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "d35b35232eb240968cc425430585b516",
+          "edgeType": "Edge",
+          "source": "5d8cf496d8ef4085ac240af8807e155c",
+          "target": "ce249784e3aa42de9ae63b728d57e839",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c106a7c6e9074bbf9bfb555291f7b1c9",
+          "edgeType": "Edge",
+          "source": "56561b379bf24528893d2f1e69a69ce8",
+          "target": "b0d614fa5cd344e993c911f0140c1ea8",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "38b0826aa9ff4f6cbe68b9b48343d081",
+          "edgeType": "Branch",
+          "source": "b0d614fa5cd344e993c911f0140c1ea8",
+          "target": "0f930382677444e3adafe61c952b9dd6",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.serve_altro_!=no^vaInputs.serve_altro_!=no grazie^vaInputs.serve_altro_!=ciao",
+            "mode": "query"
+          },
+          "label": "Si"
+        },
+        {
+          "id": "f67f66b50aaa45ecb6e4488daa910297",
+          "edgeType": "Edge",
+          "source": "0f930382677444e3adafe61c952b9dd6",
+          "target": "ce249784e3aa42de9ae63b728d57e839",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "87a39f0c405545669ab73d1da9aedccd": {
+      "category": "vaInputs",
+      "id": "87a39f0c405545669ab73d1da9aedccd",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "9bcb1cfa926a4744a3d4987ad4bc63bd": {
+      "id": "9bcb1cfa926a4744a3d4987ad4bc63bd",
+      "name": "domanda",
+      "label": "Domanda",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTY3NTQ1MTg5MDc3NiBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
+    },
+    "efa1533a780f4da3be6bda002a85b844": {
+      "id": "efa1533a780f4da3be6bda002a85b844",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "Conversation_ID",
+      "label": "Conversation_ID",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "912cbb1a35194d4d972c74f26b838593": {
+      "id": "912cbb1a35194d4d972c74f26b838593",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "Response",
+      "label": "Response",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "401004c516b24dda84a04c1e46f3c76a": {
+      "id": "401004c516b24dda84a04c1e46f3c76a",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "Prompt",
+      "label": "Prompt",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "c195d3ef9d3a48bdac1a691f57ea5632": {
+      "id": "c195d3ef9d3a48bdac1a691f57ea5632",
+      "name": "serve_altro_",
+      "label": "Serve Altro?",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTY3NTY5Mjc2NDU4OCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
+    }
+  }
+}</graph>
+        <key_phrases>AskAI Bancoposta IB,ServiceNow Italia</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>AskAI Bancoposta IB</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id>04c531ad1bf8a5105a344339cd4bcb54</source_topic_id>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 13:50:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5777cc6697bc215085b7b4cfe153af99</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>AskAI Bancoposta IB</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_cb_topic_5777cc6697bc215085b7b4cfe153af99</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 14:25:03</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>SETUP_TOPIC</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=5777cc6697bc215085b7b4cfe153af99"/>
+</record_update>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 19:58:08</sys_created_on>
+        <sys_id>33bb196a97b0615085b7b4cfe153afee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>REST Trigger - 53f7996697b0615085b7b4cfe153afa4.admin</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_security_acl display_value="REST Trigger - 53f7996697b0615085b7b4cfe153afa4">bbbb196a97b0615085b7b4cfe153afea</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_33bb196a97b0615085b7b4cfe153afee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 19:58:08</sys_updated_on>
+        <sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</application>
+        <file_path/>
+        <instance_id>359d66c7dbd55d9c9df22f17d4961970</instance_id>
+        <instance_name>demotechnologywf15452</instance_name>
+        <name>sys_security_acl_role_33bb196a97b0615085b7b4cfe153afee</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-06 19:58:08</sys_created_on><sys_id>33bb196a97b0615085b7b4cfe153afee</sys_id><sys_mod_count>0</sys_mod_count><sys_name>REST Trigger - 53f7996697b0615085b7b4cfe153afa4.admin</sys_name><sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package><sys_policy/><sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope><sys_security_acl display_value="REST Trigger - 53f7996697b0615085b7b4cfe153afa4">bbbb196a97b0615085b7b4cfe153afea</sys_security_acl><sys_update_name>sys_security_acl_role_33bb196a97b0615085b7b4cfe153afee</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-06 19:58:08</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1792371029</payload_hash>
+        <record_name>REST Trigger - 53f7996697b0615085b7b4cfe153afa4.admin</record_name>
+        <reverted_from/>
+        <source>741e570297fced1085b7b4cfe153af02</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 19:58:08</sys_created_on>
+        <sys_id>f7bb196a97b0615085b7b4cfe153aff0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186284ea5650000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 19:58:08</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>33bb196a26b06150187159bdffa2eef0</update_guid>
+        <update_guid_history>33bb196a26b06150187159bdffa2eef0:-1792371029</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="REST Trigger - 53f7996697b0615085b7b4cfe153afa4.admin">1d0d9daa97b0615085b7b4cfe153afe7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:03:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>79d9380880044eb0bfc1810737054904</sys_id>
+        <sys_metadata>33bb196a97b0615085b7b4cfe153afee</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>REST Trigger - 53f7996697b0615085b7b4cfe153afa4.admin</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_scope_delete display_value="">871609ac3a4b41f48a7fc9d021a251e4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_33bb196a97b0615085b7b4cfe153afee</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_33bb196a97b0615085b7b4cfe153afee">f7bb196a97b0615085b7b4cfe153aff0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:03:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

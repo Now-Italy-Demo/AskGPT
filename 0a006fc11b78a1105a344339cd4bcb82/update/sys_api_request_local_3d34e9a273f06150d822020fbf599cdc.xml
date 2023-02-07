@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_api_request_local">
+    <sys_api_request_local action="INSERT_OR_UPDATE">
+        <api_collection/>
+        <api_operation display_value="GET /">bd34e9a297f0615085b7b4cfe153afdf</api_operation>
+        <description/>
+        <name>Generated Request for f7832d6297f0615085b7b4cfe153af40</name>
+        <required>false</required>
+        <sys_class_name>sys_api_request_local</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3d34e9a273f06150d822020fbf599cdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bd34e9a297f0615085b7b4cfe153afdf</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_api_request_local_3d34e9a273f06150d822020fbf599cdc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:08</sys_updated_on>
+    </sys_api_request_local>
+</record_update>

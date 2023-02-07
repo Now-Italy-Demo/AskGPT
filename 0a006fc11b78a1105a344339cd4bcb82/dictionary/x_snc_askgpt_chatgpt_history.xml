@@ -3,5 +3,7 @@
         <element label="Context" max_length="512" name="context" type="string"/>
         <element label="Conversation ID" max_length="48" name="conversation_id" type="string"/>
         <element label="History JSON" max_length="16000" name="history_json" type="string"/>
+        <element label="Prompt" max_length="2048" name="prompt" type="string"/>
+        <element label="Response" max_length="8000" name="response" type="string"/>
     </element>
 </database>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_api_operation">
+    <sys_api_operation action="DELETE">
+        <active>true</active>
+        <api_collection display_value="Rest trigger for flow id=53f7996697b0615085b7b4cfe153afa4 - v1">ca0a112a97b0615085b7b4cfe153af9b</api_collection>
+        <api_request display_value="Generated Request for 53f7996697b0615085b7b4cfe153afa4">4023656290f06150df900d96738d1b82</api_request>
+        <api_security_scheme display_value="">5023656297f0615085b7b4cfe153af96</api_security_scheme>
+        <deprecated>false</deprecated>
+        <description/>
+        <execute_asynchronously>true</execute_asynchronously>
+        <execution_record>53f7996697b0615085b7b4cfe153afa4</execution_record>
+        <execution_type>sys_hub_flow</execution_type>
+        <http_method>get</http_method>
+        <name>GET /</name>
+        <operation_id/>
+        <origin>flow_designer</origin>
+        <path>/</path>
+        <sys_class_name>sys_api_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 19:50:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5a0a112a97b0615085b7b4cfe153af9f</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>GET /</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_api_operation_5a0a112a97b0615085b7b4cfe153af9f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:30:23</sys_updated_on>
+    </sys_api_operation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</application>
+        <file_path/>
+        <instance_id>359d66c7dbd55d9c9df22f17d4961970</instance_id>
+        <instance_name>demotechnologywf15452</instance_name>
+        <name>sys_api_operation_5a0a112a97b0615085b7b4cfe153af9f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_api_operation"><sys_api_operation action="INSERT_OR_UPDATE"><active>true</active><api_collection display_value="Rest trigger for flow id=53f7996697b0615085b7b4cfe153afa4 - v1">ca0a112a97b0615085b7b4cfe153af9b</api_collection><api_request display_value="Generated Request for 53f7996697b0615085b7b4cfe153afa4">4023656290f06150df900d96738d1b82</api_request><api_security_scheme display_value="">5023656297f0615085b7b4cfe153af96</api_security_scheme><deprecated>false</deprecated><description/><execute_asynchronously>true</execute_asynchronously><execution_record>53f7996697b0615085b7b4cfe153afa4</execution_record><execution_type>sys_hub_flow</execution_type><http_method>get</http_method><name>GET /</name><operation_id/><origin>flow_designer</origin><path>/</path><sys_class_name>sys_api_operation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-06 19:50:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5a0a112a97b0615085b7b4cfe153af9f</sys_id><sys_mod_count>17</sys_mod_count><sys_name>GET /</sys_name><sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package><sys_policy/><sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope><sys_update_name>sys_api_operation_5a0a112a97b0615085b7b4cfe153af9f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-06 20:30:23</sys_updated_on></sys_api_operation></record_update>]]></payload>
+        <payload_hash>551303758</payload_hash>
+        <record_name>GET /</record_name>
+        <reverted_from/>
+        <source>741e570297fced1085b7b4cfe153af02</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:30:23</sys_created_on>
+        <sys_id>9423656297f0615085b7b4cfe153af9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186286c2bfc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:30:23</sys_updated_on>
+        <type>API Operation</type>
+        <update_guid>9c23656200f0615028b16acf51221799</update_guid>
+        <update_guid_history>9c23656200f0615028b16acf51221799:551303758,18236562b3f0615060f3409c25a96d91:823453723,6aa22d2251f0615036a5ab2a1cc882b8:-1614611290,6aa22d2251f0615036a5ab2a1cc882b8:-1614611290,aea22d220bf06150bb00460391b197a2:-42993903,9bf1adee17b06150eeebfd1235ea173c:998600657,9bf1adee17b06150eeebfd1235ea173c:998600657,87f1adee81b06150fe9a1003f8656733:-132913107,85ff996ea5b0615001d319eeafe28020:-1187968303,85ff996ea5b0615001d319eeafe28020:-1187968303,b0ff996ed2b0615079b9c72411211017:1084802518,055e912ed2b061509f620ee589195492:-534560719,055e912ed2b061509f620ee589195492:-534560719,b05e912e04b061504e8f3c1b5f83b589:-784541832,a10dddaa9eb06150b33c64029deaf60b:2124354209,a10dddaa9eb06150b33c64029deaf60b:2124354209,9d0dddaad0b06150b574a0d409481501:-958577656,a8ac95aaa0b06150c5c8415e50f7c1cf:-442556434,a8ac95aaa0b06150c5c8415e50f7c1cf:-442556434,e4ac95aabeb061509feb10757c66d9c4:-1850208895,37bb596aabb061501b8f814f7e721c10:1634701073,37bb596aabb061501b8f814f7e721c10:1634701073,b7bb596aa9b061506ab590ae443dfe03:1546058348,1a0a112a90b06150434f2a84e2699bad:587447036,1a0a112a90b06150434f2a84e2699bad:587447036,120a112a5eb06150c9a4cbf6c43ed5a2:321155131</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:31:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_api_operation">sys_api_operation</sys_db_object>
+        <sys_id>86e1d5cc7e7144be86dc6a168dd51359</sys_id>
+        <sys_metadata>5a0a112a97b0615085b7b4cfe153af9f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GET /</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_scope_delete display_value="">871609ac3a4b41f48a7fc9d021a251e4</sys_scope_delete>
+        <sys_update_name>sys_api_operation_5a0a112a97b0615085b7b4cfe153af9f</sys_update_name>
+        <sys_update_version display_value="sys_api_operation_5a0a112a97b0615085b7b4cfe153af9f">9423656297f0615085b7b4cfe153af9a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:31:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

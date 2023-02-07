@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_api_operation">
+    <sys_api_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <api_collection display_value="Rest trigger for flow id=f7832d6297f0615085b7b4cfe153af40 - v1">fd34e9a297f0615085b7b4cfe153afdc</api_collection>
+        <api_request display_value="Generated Request for f7832d6297f0615085b7b4cfe153af40">3d34e9a273f06150d822020fbf599cdc</api_request>
+        <api_security_scheme display_value="">7934e9a297f0615085b7b4cfe153afe6</api_security_scheme>
+        <deprecated>false</deprecated>
+        <description/>
+        <execute_asynchronously>true</execute_asynchronously>
+        <execution_record>f7832d6297f0615085b7b4cfe153af40</execution_record>
+        <execution_type>sys_hub_flow</execution_type>
+        <http_method>get</http_method>
+        <name>GET /</name>
+        <operation_id/>
+        <origin>flow_designer</origin>
+        <path>/</path>
+        <sys_class_name>sys_api_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bd34e9a297f0615085b7b4cfe153afdf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>GET /</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_api_operation_bd34e9a297f0615085b7b4cfe153afdf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:08</sys_updated_on>
+    </sys_api_operation>
+</record_update>

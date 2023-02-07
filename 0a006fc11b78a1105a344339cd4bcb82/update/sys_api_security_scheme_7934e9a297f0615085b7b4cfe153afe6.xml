@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_api_security_scheme">
+    <sys_api_security_scheme action="INSERT_OR_UPDATE">
+        <allow_external_access>false</allow_external_access>
+        <api_collection display_value="Rest trigger for flow id=f7832d6297f0615085b7b4cfe153af40 - v1">fd34e9a297f0615085b7b4cfe153afdc</api_collection>
+        <enforce_acl/>
+        <requires_authentication>true</requires_authentication>
+        <sys_class_name>sys_api_security_scheme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7934e9a297f0615085b7b4cfe153afe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_api_security_scheme_7934e9a297f0615085b7b4cfe153afe6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:08</sys_updated_on>
+    </sys_api_security_scheme>
+</record_update>

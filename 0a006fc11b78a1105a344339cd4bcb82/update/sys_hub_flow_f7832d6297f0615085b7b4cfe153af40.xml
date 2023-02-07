@@ -1,0 +1,1916 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Update Incident via REST APi impersonating a user</description>
+        <internal_name>askai_update_incident_record_rest</internal_name>
+        <label_cache>[{"name":"ea50a7dd-0353-4e6f-ae4c-3b600096ecb8.item.response","label":"2 - For Each➛ChatGPT History Record➛Response","reference":"","reference_display":"Response","type":"string","base_type":"string","parent_table_name":"x_snc_askgpt_chatgpt_history","column_name":"response"},{"name":"2e3a16b1-1af5-40e9-bce2-4ee1aa511e3c.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"2e3a16b1-1af5-40e9-bce2-4ee1aa511e3c.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2e3a16b1-1af5-40e9-bce2-4ee1aa511e3c.table_name","label":"5 - Update Record➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e3a16b1-1af5-40e9-bce2-4ee1aa511e3c.record","label":"5 - Update Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e15fdd2-ba76-4ba3-8c24-a837bd56d475.item","label":"4 - For Each➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"REST API - Asynchronous_1.query_parameters.cid","label":"Trigger - REST API - Asynchronous➛Query Parameters➛cid","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d8968e87-4f39-4dd4-877f-cf256b8d929a.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d8968e87-4f39-4dd4-877f-cf256b8d929a.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d8968e87-4f39-4dd4-877f-cf256b8d929a.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d8968e87-4f39-4dd4-877f-cf256b8d929a.Table","label":"1 - Look Up Records➛ChatGPT History Table","reference":"x_snc_askgpt_chatgpt_history","reference_display":"ChatGPT History","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d8968e87-4f39-4dd4-877f-cf256b8d929a.Records","label":"1 - Look Up Records➛ChatGPT History Records","reference":"x_snc_askgpt_chatgpt_history","reference_display":"ChatGPT History","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ea50a7dd-0353-4e6f-ae4c-3b600096ecb8.item","label":"2 - For Each➛ChatGPT History Record","reference":"x_snc_askgpt_chatgpt_history","reference_display":"ChatGPT History","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"0c347b28-efcd-4159-9154-251e054cf7ad.Records","label":"3 - Look Up Records➛Incident Records","reference":"incident","reference_display":"Incident","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0c347b28-efcd-4159-9154-251e054cf7ad.Table","label":"3 - Look Up Records➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0c347b28-efcd-4159-9154-251e054cf7ad.Count","label":"3 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0c347b28-efcd-4159-9154-251e054cf7ad.__action_status__","label":"3 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0c347b28-efcd-4159-9154-251e054cf7ad.__dont_treat_as_error__","label":"3 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"REST API - Asynchronous_1.query_parameters.inc","label":"Trigger - REST API - Asynchronous➛Query Parameters➛inc","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
+        <master_snapshot>2d34e9a297f0615085b7b4cfe153af3c</master_snapshot>
+        <name>AskAI Update Incident Record REST</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>fd34e9a297f0615085b7b4cfe153afeb</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:32:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f7832d6297f0615085b7b4cfe153af40</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>AskAI Update Incident Record REST</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_hub_flow_f7832d6297f0615085b7b4cfe153af40</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:09</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=f7832d6297f0615085b7b4cfe153af40"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f7832d6297f0615085b7b4cfe153af40"/>
+    <sys_rest_api_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <api_operation display_value="GET /">bd34e9a297f0615085b7b4cfe153afdf</api_operation>
+        <name/>
+        <roles_acl/>
+        <sys_class_name>sys_rest_api_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fd34e9a297f0615085b7b4cfe153afeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:08</sys_updated_on>
+    </sys_rest_api_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=f7832d6297f0615085b7b4cfe153af40"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=f7832d6297f0615085b7b4cfe153af40^sys_idNOT IN39b361a297f0615085b7b4cfe153af9d"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="AskAI Update Incident Record REST">f7832d6297f0615085b7b4cfe153af40</flow>
+        <name>REST API - Asynchronous</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:32:56</sys_created_on>
+        <sys_id>39b361a297f0615085b7b4cfe153af9d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:08</sys_updated_on>
+        <trigger_definition display_value="REST API - Asynchronous">77ad0b76c71000101666868cb8c2601d</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>rest_async</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=39b361a297f0615085b7b4cfe153af9d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>39b361a297f0615085b7b4cfe153af9d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:32:56</sys_created_on>
+        <sys_id>71b361a297f0615085b7b4cfe153af9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:32:56</sys_updated_on>
+        <value>/api/x_snc_askgpt/askai_update_incident_record_rest</value>
+        <variable display_value="Base Path">3af53c10c7531010bd2f868cb8c2608b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>39b361a297f0615085b7b4cfe153af9d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:32:56</sys_created_on>
+        <sys_id>b9b361a297f0615085b7b4cfe153af9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:32:56</sys_updated_on>
+        <value>get</value>
+        <variable display_value="HTTP Method">6b6fcc4bc71000101666868cb8c260a1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_77ad0b76c71000101666868cb8c2601d^id=39b361a297f0615085b7b4cfe153af9d"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_77ad0b76c71000101666868cb8c2601d^id=39b361a297f0615085b7b4cfe153af9d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=f7832d6297f0615085b7b4cfe153af40"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f7832d6297f0615085b7b4cfe153af40^sys_idNOT INb3832d6297f0615085b7b4cfe153af41"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f7832d6297f0615085b7b4cfe153af40</id>
+        <name>AskAI Update Incident Record REST</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:32:16</sys_created_on>
+        <sys_id>b3832d6297f0615085b7b4cfe153af41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:32:16</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b3832d6297f0615085b7b4cfe153af41"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=f7832d6297f0615085b7b4cfe153af40^sys_idNOT IN35b361a297f0615085b7b4cfe153af90,39b361a297f0615085b7b4cfe153af96,b5b361a297f0615085b7b4cfe153af93,e1b361a297f0615085b7b4cfe153af8c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDa9b361a26ff061506171d80e0b33d386,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>query_parameters</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Query Parameters</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="AskAI Update Incident Record REST">f7832d6297f0615085b7b4cfe153af40</model>
+        <model_id>f7832d6297f0615085b7b4cfe153af40</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f7832d6297f0615085b7b4cfe153af40</name>
+        <next_element/>
+        <order>130</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:32:56</sys_created_on>
+        <sys_id>35b361a297f0615085b7b4cfe153af90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:32:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDa1b361a28ef0615093ad287abc1b2d8a,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Body</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="AskAI Update Incident Record REST">f7832d6297f0615085b7b4cfe153af40</model>
+        <model_id>f7832d6297f0615085b7b4cfe153af40</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f7832d6297f0615085b7b4cfe153af40</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:32:56</sys_created_on>
+        <sys_id>39b361a297f0615085b7b4cfe153af96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:32:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDa5b361a23ff0615069a73a5e3a5a1e88,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>headers</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Headers</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="AskAI Update Incident Record REST">f7832d6297f0615085b7b4cfe153af40</model>
+        <model_id>f7832d6297f0615085b7b4cfe153af40</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f7832d6297f0615085b7b4cfe153af40</name>
+        <next_element/>
+        <order>140</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:32:56</sys_created_on>
+        <sys_id>b5b361a297f0615085b7b4cfe153af93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:32:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD29b361a20af061502419494ea5ca8784,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>path_parameters</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Path Parameters</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="AskAI Update Incident Record REST">f7832d6297f0615085b7b4cfe153af40</model>
+        <model_id>f7832d6297f0615085b7b4cfe153af40</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f7832d6297f0615085b7b4cfe153af40</name>
+        <next_element/>
+        <order>120</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:32:56</sys_created_on>
+        <sys_id>e1b361a297f0615085b7b4cfe153af8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:32:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=f7832d6297f0615085b7b4cfe153af40"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f7832d6297f0615085b7b4cfe153af40"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=f7832d6297f0615085b7b4cfe153af40^sys_idNOT IN0bd3e1a297f0615085b7b4cfe153afe8,3e2469a297f0615085b7b4cfe153afa8,e004a5a297f0615085b7b4cfe153af79"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="AskAI Update Incident Record REST">f7832d6297f0615085b7b4cfe153af40</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:33:35</sys_created_on>
+        <sys_id>0bd3e1a297f0615085b7b4cfe153afe8</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_updated_by>askai</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:36</sys_updated_on>
+        <ui_id>d8968e87-4f39-4dd4-877f-cf256b8d929a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0bd3e1a297f0615085b7b4cfe153afe8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0bd3e1a297f0615085b7b4cfe153afe8</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:33:35</sys_created_on>
+        <sys_id>03d3e1a297f0615085b7b4cfe153afec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:33:35</sys_updated_on>
+        <value>sys_updated_on</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0bd3e1a297f0615085b7b4cfe153afe8</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:33:35</sys_created_on>
+        <sys_id>4fd3e1a297f0615085b7b4cfe153afeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:33:35</sys_updated_on>
+        <value>sort_desc</value>
+        <variable display_value="Sort Type">0f400a1587003300663ca1bb36cb0b59</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0bd3e1a297f0615085b7b4cfe153afe8</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:33:35</sys_created_on>
+        <sys_id>87d3e1a297f0615085b7b4cfe153afec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:33:35</sys_updated_on>
+        <value>x_snc_askgpt_chatgpt_history</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0bd3e1a297f0615085b7b4cfe153afe8</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:33:35</sys_created_on>
+        <sys_id>c3d3e1a297f0615085b7b4cfe153afec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:33:35</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0bd3e1a297f0615085b7b4cfe153afe8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>0bd3e1a297f0615085b7b4cfe153afe8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:33:35</sys_created_on>
+        <sys_id>0bd3e1a297f0615085b7b4cfe153afeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:33:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>conversation_id={{REST API - Asynchronous_1.query_parameters.cid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>max_results</field>
+        <id>0bd3e1a297f0615085b7b4cfe153afe8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:33:35</sys_created_on>
+        <sys_id>83d3e1a297f0615085b7b4cfe153afeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:33:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_column</field>
+        <id>0bd3e1a297f0615085b7b4cfe153afe8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:33:35</sys_created_on>
+        <sys_id>47d3e1a297f0615085b7b4cfe153afeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:33:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_type</field>
+        <id>0bd3e1a297f0615085b7b4cfe153afe8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:33:35</sys_created_on>
+        <sys_id>cbd3e1a297f0615085b7b4cfe153afea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:33:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>0bd3e1a297f0615085b7b4cfe153afe8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:33:35</sys_created_on>
+        <sys_id>cbd3e1a297f0615085b7b4cfe153afeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:33:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0bd3e1a297f0615085b7b4cfe153afe8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0bd3e1a297f0615085b7b4cfe153afe8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="AskAI Update Incident Record REST">f7832d6297f0615085b7b4cfe153af40</flow>
+        <order>5</order>
+        <parent_ui_id>8e15fdd2-ba76-4ba3-8c24-a837bd56d475</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:34:56</sys_created_on>
+        <sys_id>3e2469a297f0615085b7b4cfe153afa8</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_updated_by>askai</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:36</sys_updated_on>
+        <ui_id>2e3a16b1-1af5-40e9-bce2-4ee1aa511e3c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3e2469a297f0615085b7b4cfe153afa8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3e2469a297f0615085b7b4cfe153afa8</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:34:56</sys_created_on>
+        <sys_id>7a2469a297f0615085b7b4cfe153afaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:34:56</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3e2469a297f0615085b7b4cfe153afa8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>3e2469a297f0615085b7b4cfe153afa8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:34:56</sys_created_on>
+        <sys_id>f62469a297f0615085b7b4cfe153afaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:34:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{8e15fdd2-ba76-4ba3-8c24-a837bd56d475.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>3e2469a297f0615085b7b4cfe153afa8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:34:56</sys_created_on>
+        <sys_id>722469a297f0615085b7b4cfe153afaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:34:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>3e2469a297f0615085b7b4cfe153afa8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:34:56</sys_created_on>
+        <sys_id>362469a297f0615085b7b4cfe153afaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:34:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>comments={{ea50a7dd-0353-4e6f-ae4c-3b600096ecb8.item.response}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3e2469a297f0615085b7b4cfe153afa8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3e2469a297f0615085b7b4cfe153afa8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="AskAI Update Incident Record REST">f7832d6297f0615085b7b4cfe153af40</flow>
+        <order>3</order>
+        <parent_ui_id>ea50a7dd-0353-4e6f-ae4c-3b600096ecb8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:34:13</sys_created_on>
+        <sys_id>e004a5a297f0615085b7b4cfe153af79</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_updated_by>askai</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:36</sys_updated_on>
+        <ui_id>0c347b28-efcd-4159-9154-251e054cf7ad</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e004a5a297f0615085b7b4cfe153af79"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e004a5a297f0615085b7b4cfe153af79</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:34:13</sys_created_on>
+        <sys_id>2004a5a297f0615085b7b4cfe153af7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:34:13</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e004a5a297f0615085b7b4cfe153af79</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:34:13</sys_created_on>
+        <sys_id>e004a5a297f0615085b7b4cfe153af7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:34:13</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e004a5a297f0615085b7b4cfe153af79"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>e004a5a297f0615085b7b4cfe153af79</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:34:13</sys_created_on>
+        <sys_id>e804a5a297f0615085b7b4cfe153af7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:34:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>number={{REST API - Asynchronous_1.query_parameters.inc}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>max_results</field>
+        <id>e004a5a297f0615085b7b4cfe153af79</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:34:13</sys_created_on>
+        <sys_id>2804a5a297f0615085b7b4cfe153af7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:34:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>e004a5a297f0615085b7b4cfe153af79</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:34:13</sys_created_on>
+        <sys_id>ac04a5a297f0615085b7b4cfe153af7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:34:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e004a5a297f0615085b7b4cfe153af79"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e004a5a297f0615085b7b4cfe153af79"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=f7832d6297f0615085b7b4cfe153af40"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=f7832d6297f0615085b7b4cfe153af40^sys_idNOT IN6404a5a297f0615085b7b4cfe153af70,fa2469a297f0615085b7b4cfe153afa2"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">e804a5a297f0615085b7b4cfe153af6f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="AskAI Update Incident Record REST">f7832d6297f0615085b7b4cfe153af40</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:34:13</sys_created_on>
+        <sys_id>6404a5a297f0615085b7b4cfe153af70</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:08</sys_updated_on>
+        <ui_id>ea50a7dd-0353-4e6f-ae4c-3b600096ecb8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6404a5a297f0615085b7b4cfe153af70"/>
+    <sys_element_mapping action="delete_multiple" query="id=6404a5a297f0615085b7b4cfe153af70"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>6404a5a297f0615085b7b4cfe153af70</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:34:13</sys_created_on>
+        <sys_id>6404a5a297f0615085b7b4cfe153af73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:34:13</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{d8968e87-4f39-4dd4-877f-cf256b8d929a.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6404a5a297f0615085b7b4cfe153af70"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6404a5a297f0615085b7b4cfe153af70"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">762469a297f0615085b7b4cfe153afa2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="AskAI Update Incident Record REST">f7832d6297f0615085b7b4cfe153af40</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>ea50a7dd-0353-4e6f-ae4c-3b600096ecb8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:34:56</sys_created_on>
+        <sys_id>fa2469a297f0615085b7b4cfe153afa2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:08</sys_updated_on>
+        <ui_id>8e15fdd2-ba76-4ba3-8c24-a837bd56d475</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=fa2469a297f0615085b7b4cfe153afa2"/>
+    <sys_element_mapping action="delete_multiple" query="id=fa2469a297f0615085b7b4cfe153afa2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>fa2469a297f0615085b7b4cfe153afa2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:34:56</sys_created_on>
+        <sys_id>722469a297f0615085b7b4cfe153afa5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:34:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{0c347b28-efcd-4159-9154-251e054cf7ad.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=fa2469a297f0615085b7b4cfe153afa2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fa2469a297f0615085b7b4cfe153afa2"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f7832d6297f0615085b7b4cfe153af40"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f7832d6297f0615085b7b4cfe153af40"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_f7832d6297f0615085b7b4cfe153af40^sys_idNOT IN39b361a297f0615085b7b4cfe153af92,3db361a297f0615085b7b4cfe153af98,b5b361a297f0615085b7b4cfe153af8f,b9b361a297f0615085b7b4cfe153af95"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>query_parameters</element>
+        <help/>
+        <hint/>
+        <label>Query Parameters</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f7832d6297f0615085b7b4cfe153af40</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:32:56</sys_created_on>
+        <sys_id>39b361a297f0615085b7b4cfe153af92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:32:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>body</element>
+        <help/>
+        <hint/>
+        <label>Body</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f7832d6297f0615085b7b4cfe153af40</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:32:56</sys_created_on>
+        <sys_id>3db361a297f0615085b7b4cfe153af98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:32:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>path_parameters</element>
+        <help/>
+        <hint/>
+        <label>Path Parameters</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f7832d6297f0615085b7b4cfe153af40</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:32:56</sys_created_on>
+        <sys_id>b5b361a297f0615085b7b4cfe153af8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:32:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>headers</element>
+        <help/>
+        <hint/>
+        <label>Headers</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f7832d6297f0615085b7b4cfe153af40</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:32:56</sys_created_on>
+        <sys_id>b9b361a297f0615085b7b4cfe153af95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:32:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f7832d6297f0615085b7b4cfe153af40"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_f7832d6297f0615085b7b4cfe153af40"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f7832d6297f0615085b7b4cfe153af40"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=f7832d6297f0615085b7b4cfe153af40^sys_idNOT INb534e9a297f0615085b7b4cfe153afec"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"b534e9a297f0615085b7b4cfe153afec","name":"plan","plan_signature":null}}</plan>
+        <plan_id>f7832d6297f0615085b7b4cfe153af40</plan_id>
+        <snapshot>3454ada297f0615085b7b4cfe153af46</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b534e9a297f0615085b7b4cfe153afec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:08</sys_updated_on>
+        <trigger display_value="">fd34e9a297f0615085b7b4cfe153afeb</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=f7832d6297f0615085b7b4cfe153af40"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Update Incident via REST APi impersonating a user</description>
+        <internal_name>askai_update_incident_record_rest</internal_name>
+        <label_cache>[{"name":"ea50a7dd-0353-4e6f-ae4c-3b600096ecb8.item.response","label":"2 - For Each➛ChatGPT History Record➛Response","reference":"","reference_display":"Response","type":"string","base_type":"string","parent_table_name":"x_snc_askgpt_chatgpt_history","column_name":"response"},{"name":"2e3a16b1-1af5-40e9-bce2-4ee1aa511e3c.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"2e3a16b1-1af5-40e9-bce2-4ee1aa511e3c.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2e3a16b1-1af5-40e9-bce2-4ee1aa511e3c.table_name","label":"5 - Update Record➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e3a16b1-1af5-40e9-bce2-4ee1aa511e3c.record","label":"5 - Update Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e15fdd2-ba76-4ba3-8c24-a837bd56d475.item","label":"4 - For Each➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"REST API - Asynchronous_1.query_parameters.cid","label":"Trigger - REST API - Asynchronous➛Query Parameters➛cid","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d8968e87-4f39-4dd4-877f-cf256b8d929a.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d8968e87-4f39-4dd4-877f-cf256b8d929a.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d8968e87-4f39-4dd4-877f-cf256b8d929a.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d8968e87-4f39-4dd4-877f-cf256b8d929a.Table","label":"1 - Look Up Records➛ChatGPT History Table","reference":"x_snc_askgpt_chatgpt_history","reference_display":"ChatGPT History","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d8968e87-4f39-4dd4-877f-cf256b8d929a.Records","label":"1 - Look Up Records➛ChatGPT History Records","reference":"x_snc_askgpt_chatgpt_history","reference_display":"ChatGPT History","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ea50a7dd-0353-4e6f-ae4c-3b600096ecb8.item","label":"2 - For Each➛ChatGPT History Record","reference":"x_snc_askgpt_chatgpt_history","reference_display":"ChatGPT History","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"0c347b28-efcd-4159-9154-251e054cf7ad.Records","label":"3 - Look Up Records➛Incident Records","reference":"incident","reference_display":"Incident","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0c347b28-efcd-4159-9154-251e054cf7ad.Table","label":"3 - Look Up Records➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0c347b28-efcd-4159-9154-251e054cf7ad.Count","label":"3 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0c347b28-efcd-4159-9154-251e054cf7ad.__action_status__","label":"3 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0c347b28-efcd-4159-9154-251e054cf7ad.__dont_treat_as_error__","label":"3 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"REST API - Asynchronous_1.query_parameters.inc","label":"Trigger - REST API - Asynchronous➛Query Parameters➛inc","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>AskAI Update Incident Record REST</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="AskAI Update Incident Record REST">f7832d6297f0615085b7b4cfe153af40</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2d34e9a297f0615085b7b4cfe153af3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:06</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=2d34e9a297f0615085b7b4cfe153af3c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2d34e9a297f0615085b7b4cfe153af3c"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=2d34e9a297f0615085b7b4cfe153af3c^sys_idNOT IN3134e9a297f0615085b7b4cfe153afa8"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="AskAI Update Incident Record REST">2d34e9a297f0615085b7b4cfe153af3c</flow>
+        <name>REST API - Asynchronous</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>3134e9a297f0615085b7b4cfe153afa8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:08</sys_updated_on>
+        <trigger_definition display_value="REST API - Asynchronous">77ad0b76c71000101666868cb8c2601d</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>rest_async</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3134e9a297f0615085b7b4cfe153afa8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3134e9a297f0615085b7b4cfe153afa8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>3d34e9a297f0615085b7b4cfe153afa9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <value>get</value>
+        <variable display_value="HTTP Method">6b6fcc4bc71000101666868cb8c260a1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3134e9a297f0615085b7b4cfe153afa8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>fd34e9a297f0615085b7b4cfe153afa9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <value>/api/x_snc_askgpt/askai_update_incident_record_rest</value>
+        <variable display_value="Base Path">3af53c10c7531010bd2f868cb8c2608b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_77ad0b76c71000101666868cb8c2601d^id=3134e9a297f0615085b7b4cfe153afa8"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_77ad0b76c71000101666868cb8c2601d^id=3134e9a297f0615085b7b4cfe153afa8"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=2d34e9a297f0615085b7b4cfe153af3c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=2d34e9a297f0615085b7b4cfe153af3c^sys_idNOT INa934e9a297f0615085b7b4cfe153af3d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>2d34e9a297f0615085b7b4cfe153af3c</id>
+        <name>AskAI Update Incident Record REST</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:06</sys_created_on>
+        <sys_id>a934e9a297f0615085b7b4cfe153af3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:06</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a934e9a297f0615085b7b4cfe153af3d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=2d34e9a297f0615085b7b4cfe153af3c^sys_idNOT INad34e9a297f0615085b7b4cfe153af65,e934e9a297f0615085b7b4cfe153af45,ed34e9a297f0615085b7b4cfe153af5d,ed34e9a297f0615085b7b4cfe153af6d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDad34e9a211f0615096e99d115b3de041,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>headers</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Headers</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="AskAI Update Incident Record REST">2d34e9a297f0615085b7b4cfe153af3c</model>
+        <model_id>2d34e9a297f0615085b7b4cfe153af3c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2d34e9a297f0615085b7b4cfe153af3c</name>
+        <next_element/>
+        <order>140</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>ad34e9a297f0615085b7b4cfe153af65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDa534e9a2b9f0615084144d8348bf283e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>path_parameters</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Path Parameters</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="AskAI Update Incident Record REST">2d34e9a297f0615085b7b4cfe153af3c</model>
+        <model_id>2d34e9a297f0615085b7b4cfe153af3c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2d34e9a297f0615085b7b4cfe153af3c</name>
+        <next_element/>
+        <order>120</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:06</sys_created_on>
+        <sys_id>e934e9a297f0615085b7b4cfe153af45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDa134e9a22ff0615054758b2505835340,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>query_parameters</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Query Parameters</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="AskAI Update Incident Record REST">2d34e9a297f0615085b7b4cfe153af3c</model>
+        <model_id>2d34e9a297f0615085b7b4cfe153af3c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2d34e9a297f0615085b7b4cfe153af3c</name>
+        <next_element/>
+        <order>130</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>ed34e9a297f0615085b7b4cfe153af5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDa934e9a292f06150a937ac9f5b2d4a43,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Body</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="AskAI Update Incident Record REST">2d34e9a297f0615085b7b4cfe153af3c</model>
+        <model_id>2d34e9a297f0615085b7b4cfe153af3c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2d34e9a297f0615085b7b4cfe153af3c</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>ed34e9a297f0615085b7b4cfe153af6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=2d34e9a297f0615085b7b4cfe153af3c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2d34e9a297f0615085b7b4cfe153af3c"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=2d34e9a297f0615085b7b4cfe153af3c^sys_idNOT INe934e9a297f0615085b7b4cfe153af95,f134e9a297f0615085b7b4cfe153af9e,f134e9a297f0615085b7b4cfe153afa6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="AskAI Update Incident Record REST">2d34e9a297f0615085b7b4cfe153af3c</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>e934e9a297f0615085b7b4cfe153af95</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <ui_id>d8968e87-4f39-4dd4-877f-cf256b8d929a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e934e9a297f0615085b7b4cfe153af95"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e934e9a297f0615085b7b4cfe153af95</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>2534e9a297f0615085b7b4cfe153af98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e934e9a297f0615085b7b4cfe153af95</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>6134e9a297f0615085b7b4cfe153af98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <value>sys_updated_on</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e934e9a297f0615085b7b4cfe153af95</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>ad34e9a297f0615085b7b4cfe153af97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <value>sort_desc</value>
+        <variable display_value="Sort Type">0f400a1587003300663ca1bb36cb0b59</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e934e9a297f0615085b7b4cfe153af95</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>e534e9a297f0615085b7b4cfe153af98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <value>x_snc_askgpt_chatgpt_history</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e934e9a297f0615085b7b4cfe153af95"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>e934e9a297f0615085b7b4cfe153af95</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>6934e9a297f0615085b7b4cfe153af97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>conversation_id={{REST API - Asynchronous_1.query_parameters.cid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>max_results</field>
+        <id>e934e9a297f0615085b7b4cfe153af95</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>e134e9a297f0615085b7b4cfe153af97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_column</field>
+        <id>e934e9a297f0615085b7b4cfe153af95</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>a534e9a297f0615085b7b4cfe153af97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_type</field>
+        <id>e934e9a297f0615085b7b4cfe153af95</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>2134e9a297f0615085b7b4cfe153af97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>e934e9a297f0615085b7b4cfe153af95</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>2d34e9a297f0615085b7b4cfe153af97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e934e9a297f0615085b7b4cfe153af95"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e934e9a297f0615085b7b4cfe153af95"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="AskAI Update Incident Record REST">2d34e9a297f0615085b7b4cfe153af3c</flow>
+        <order>3</order>
+        <parent_ui_id>ea50a7dd-0353-4e6f-ae4c-3b600096ecb8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>f134e9a297f0615085b7b4cfe153af9e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <ui_id>0c347b28-efcd-4159-9154-251e054cf7ad</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f134e9a297f0615085b7b4cfe153af9e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f134e9a297f0615085b7b4cfe153af9e</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>3134e9a297f0615085b7b4cfe153afa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f134e9a297f0615085b7b4cfe153af9e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>f134e9a297f0615085b7b4cfe153afa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f134e9a297f0615085b7b4cfe153af9e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>f134e9a297f0615085b7b4cfe153af9e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>f934e9a297f0615085b7b4cfe153af9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>number={{REST API - Asynchronous_1.query_parameters.inc}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>max_results</field>
+        <id>f134e9a297f0615085b7b4cfe153af9e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>3934e9a297f0615085b7b4cfe153af9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>f134e9a297f0615085b7b4cfe153af9e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>bd34e9a297f0615085b7b4cfe153af9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f134e9a297f0615085b7b4cfe153af9e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f134e9a297f0615085b7b4cfe153af9e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="AskAI Update Incident Record REST">2d34e9a297f0615085b7b4cfe153af3c</flow>
+        <order>5</order>
+        <parent_ui_id>8e15fdd2-ba76-4ba3-8c24-a837bd56d475</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>f134e9a297f0615085b7b4cfe153afa6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <ui_id>2e3a16b1-1af5-40e9-bce2-4ee1aa511e3c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f134e9a297f0615085b7b4cfe153afa6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f134e9a297f0615085b7b4cfe153afa6</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>3d34e9a297f0615085b7b4cfe153afa7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f134e9a297f0615085b7b4cfe153afa6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>f134e9a297f0615085b7b4cfe153afa6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>b934e9a297f0615085b7b4cfe153afa7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{8e15fdd2-ba76-4ba3-8c24-a837bd56d475.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>f134e9a297f0615085b7b4cfe153afa6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>3534e9a297f0615085b7b4cfe153afa7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>f134e9a297f0615085b7b4cfe153afa6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>f534e9a297f0615085b7b4cfe153afa7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>comments={{ea50a7dd-0353-4e6f-ae4c-3b600096ecb8.item.response}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f134e9a297f0615085b7b4cfe153afa6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f134e9a297f0615085b7b4cfe153afa6"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=2d34e9a297f0615085b7b4cfe153af3c"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=2d34e9a297f0615085b7b4cfe153af3c^sys_idNOT INa934e9a297f0615085b7b4cfe153af7e,ad34e9a297f0615085b7b4cfe153af7a"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">762469a297f0615085b7b4cfe153afa2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="AskAI Update Incident Record REST">2d34e9a297f0615085b7b4cfe153af3c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>ea50a7dd-0353-4e6f-ae4c-3b600096ecb8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>a934e9a297f0615085b7b4cfe153af7e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <ui_id>8e15fdd2-ba76-4ba3-8c24-a837bd56d475</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a934e9a297f0615085b7b4cfe153af7e"/>
+    <sys_element_mapping action="delete_multiple" query="id=a934e9a297f0615085b7b4cfe153af7e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>a934e9a297f0615085b7b4cfe153af7e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>2134e9a297f0615085b7b4cfe153af81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{0c347b28-efcd-4159-9154-251e054cf7ad.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a934e9a297f0615085b7b4cfe153af7e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a934e9a297f0615085b7b4cfe153af7e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">e804a5a297f0615085b7b4cfe153af6f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="AskAI Update Incident Record REST">2d34e9a297f0615085b7b4cfe153af3c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>ad34e9a297f0615085b7b4cfe153af7a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <ui_id>ea50a7dd-0353-4e6f-ae4c-3b600096ecb8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ad34e9a297f0615085b7b4cfe153af7a"/>
+    <sys_element_mapping action="delete_multiple" query="id=ad34e9a297f0615085b7b4cfe153af7a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>ad34e9a297f0615085b7b4cfe153af7a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>2134e9a297f0615085b7b4cfe153af7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{d8968e87-4f39-4dd4-877f-cf256b8d929a.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ad34e9a297f0615085b7b4cfe153af7a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ad34e9a297f0615085b7b4cfe153af7a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=2d34e9a297f0615085b7b4cfe153af3c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=2d34e9a297f0615085b7b4cfe153af3c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_2d34e9a297f0615085b7b4cfe153af3c^sys_idNOT IN2934e9a297f0615085b7b4cfe153af72,a534e9a297f0615085b7b4cfe153af62,e534e9a297f0615085b7b4cfe153af5a,e534e9a297f0615085b7b4cfe153af6a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>body</element>
+        <help/>
+        <hint/>
+        <label>Body</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2d34e9a297f0615085b7b4cfe153af3c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>2934e9a297f0615085b7b4cfe153af72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>query_parameters</element>
+        <help/>
+        <hint/>
+        <label>Query Parameters</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2d34e9a297f0615085b7b4cfe153af3c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>a534e9a297f0615085b7b4cfe153af62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>path_parameters</element>
+        <help/>
+        <hint/>
+        <label>Path Parameters</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2d34e9a297f0615085b7b4cfe153af3c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>e534e9a297f0615085b7b4cfe153af5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>headers</element>
+        <help/>
+        <hint/>
+        <label>Headers</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2d34e9a297f0615085b7b4cfe153af3c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 20:35:07</sys_created_on>
+        <sys_id>e534e9a297f0615085b7b4cfe153af6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 20:35:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_2d34e9a297f0615085b7b4cfe153af3c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_2d34e9a297f0615085b7b4cfe153af3c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_2d34e9a297f0615085b7b4cfe153af3c"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>f7832d6297f0615085b7b4cfe153af40</sys_id>
+        <latest_snapshot>2d34e9a297f0615085b7b4cfe153af3c</latest_snapshot>
+        <compiler_build>glide-tokyo-07-08-2022__patch4a-01-03-2023_01-11-2023_0813.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>
