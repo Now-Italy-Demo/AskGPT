@@ -38,7 +38,7 @@
         <label>current_user</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Incident AI Suggestion">e8d5239a973c215085b7b4cfe153afd8</model>
+        <model display_value="">e8d5239a973c215085b7b4cfe153afd8</model>
         <model_id>e8d5239a973c215085b7b4cfe153afd8</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_e8d5239a973c215085b7b4cfe153afd8</name>

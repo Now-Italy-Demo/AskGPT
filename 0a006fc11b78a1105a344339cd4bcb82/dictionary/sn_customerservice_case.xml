@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="email_client=true,live_feed=false" audit="true" db_object_id="ac9a6d7b870ca11003d942280cbb359b" extends="task" label="Case" max_length="40" name="sn_customerservice_case" text_index="true" type="collection">
+        <element label="Interaction Summary" max_length="8000" name="x_snc_askgpt_interaction_summary" type="string"/>
+    </element>
+</database>

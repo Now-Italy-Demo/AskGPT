@@ -29,15 +29,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4359b74d1b7ca1105a344339cd4bcb87</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>ChatCPT_Contextual_Conversation</sys_name>
         <sys_overrides/>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_update_name>sys_hub_flow_4359b74d1b7ca1105a344339cd4bcb87</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-02-06 20:43:34</sys_updated_on>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-09 09:18:42</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=4359b74d1b7ca1105a344339cd4bcb87"/>
@@ -2154,11 +2154,11 @@
         <sys_created_on>2023-02-02 15:57:37</sys_created_on>
         <sys_id>255e730d1bbca1105a344339cd4bcbc2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Context</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4359b74d1b7ca1105a344339cd4bcb87_context_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-02 15:57:37</sys_updated_on>
         <url/>
@@ -2177,11 +2177,11 @@
         <sys_created_on>2023-02-02 15:57:37</sys_created_on>
         <sys_id>315e770d1bbca1105a344339cd4bcbea</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Prompt</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4359b74d1b7ca1105a344339cd4bcb87_prompt_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-02 15:57:37</sys_updated_on>
         <url/>
@@ -2200,11 +2200,11 @@
         <sys_created_on>2023-02-02 15:57:37</sys_created_on>
         <sys_id>695e730d1bbca1105a344339cd4bcbc5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Conversation ID</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4359b74d1b7ca1105a344339cd4bcb87_conversation_id_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-02 15:57:37</sys_updated_on>
         <url/>
@@ -2223,11 +2223,11 @@
         <sys_created_on>2023-02-02 16:51:01</sys_created_on>
         <sys_id>7f8a801d1b30e1105a344339cd4bcb36</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Temperature</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4359b74d1b7ca1105a344339cd4bcb87_temperature_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-02 16:51:01</sys_updated_on>
         <url/>
@@ -2248,11 +2248,11 @@
         <sys_created_on>2023-02-02 15:57:37</sys_created_on>
         <sys_id>755e770d1bbca1105a344339cd4bcbf1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Response</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_4359b74d1b7ca1105a344339cd4bcb87_response_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-02 15:57:37</sys_updated_on>
         <url/>
@@ -2271,11 +2271,11 @@
         <sys_created_on>2023-02-02 15:57:37</sys_created_on>
         <sys_id>b95e770d1bbca1105a344339cd4bcbf4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Conversation ID</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_4359b74d1b7ca1105a344339cd4bcb87_conversation_id_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-02 15:57:37</sys_updated_on>
         <url/>
@@ -4439,11 +4439,11 @@
         <sys_created_on>2023-02-03 19:15:44</sys_created_on>
         <sys_id>1545b9291b3ca5105a344339cd4bcba8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Temperature</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9545b9291b3ca5105a344339cd4bcb8b_temperature_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-03 19:15:44</sys_updated_on>
         <url/>
@@ -4462,11 +4462,11 @@
         <sys_created_on>2023-02-03 19:15:44</sys_created_on>
         <sys_id>6945b9291b3ca5105a344339cd4bcbb0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Context</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9545b9291b3ca5105a344339cd4bcb8b_context_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-03 19:15:44</sys_updated_on>
         <url/>
@@ -4485,11 +4485,11 @@
         <sys_created_on>2023-02-03 19:15:44</sys_created_on>
         <sys_id>a545b9291b3ca5105a344339cd4bcbc1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Prompt</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9545b9291b3ca5105a344339cd4bcb8b_prompt_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-03 19:15:44</sys_updated_on>
         <url/>
@@ -4508,11 +4508,11 @@
         <sys_created_on>2023-02-03 19:15:44</sys_created_on>
         <sys_id>ed45b9291b3ca5105a344339cd4bcbb8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Conversation ID</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9545b9291b3ca5105a344339cd4bcb8b_conversation_id_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-03 19:15:44</sys_updated_on>
         <url/>
@@ -4533,11 +4533,11 @@
         <sys_created_on>2023-02-03 19:15:45</sys_created_on>
         <sys_id>6945b9291b3ca5105a344339cd4bcbcd</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Response</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_9545b9291b3ca5105a344339cd4bcb8b_response_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-03 19:15:45</sys_updated_on>
         <url/>
@@ -4556,11 +4556,11 @@
         <sys_created_on>2023-02-03 19:15:45</sys_created_on>
         <sys_id>bd45b9291b3ca5105a344339cd4bcbd5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Conversation ID</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_9545b9291b3ca5105a344339cd4bcb8b_conversation_id_en</sys_update_name>
         <sys_updated_by>antonio.rizzi</sys_updated_by>
         <sys_updated_on>2023-02-03 19:15:45</sys_updated_on>
         <url/>
