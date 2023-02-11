@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="quickactions_action">
+    <quickactions_action action="INSERT_OR_UPDATE">
+        <accepts_string_parameter>false</accepts_string_parameter>
+        <active>true</active>
+        <apply_to_all_groups>true</apply_to_all_groups>
+        <apply_to_groups/>
+        <command_name>aisuggest</command_name>
+        <condition/>
+        <description>Sends the last AI suggestion to the user via chat</description>
+        <name>Send last AI suggestion</name>
+        <parameter_hint/>
+        <parameter_label/>
+        <script><![CDATA[var message = "";
+var success = true;
+
+var gr = new GlideRecord('x_snc_askgpt_chatgpt_agent_chat_transcript');
+gr.addQuery('interaction', record.sys_id );
+
+gr.query();
+while( gr.next() ) {
+	message = gr.getValue('ai_suggestion');
+}
+
+if( message != '' ) {
+	
+	try {
+		sn_connect.Conversation.get(record.channel_metadata_document, record.channel_metadata_table)
+			.sendMessage({
+				body: message,
+				system: false,
+				internal: false
+			});
+	} catch (e) {
+		message = ""+e.toString();
+		success = false;
+	}
+}
+
+answer = {
+    message: message,
+    success: success
+};]]></script>
+        <sys_class_name>quickactions_action</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-11 22:37:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>91dfaf04878525906afa65f30cbb3535</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Send last AI suggestion</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>quickactions_action_91dfaf04878525906afa65f30cbb3535</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-11 23:52:46</sys_updated_on>
+        <table_name>interaction</table_name>
+    </quickactions_action>
+</record_update>

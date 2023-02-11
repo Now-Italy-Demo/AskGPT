@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDd13affc4a4c525905ea249c2fd852429</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>0a006fc11b78a1105a344339cd4bcb82</scope_name>
+        <serialized_content>{"FlowDesigner:FDd13affc4a4c525905ea249c2fd852429":{},"FlowDesigner:FDd13affc4a4c525905ea249c2fd852429.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDd13affc4a4c525905ea249c2fd852429\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":null,\"label\":\"Path Parameters\",\"mandatory\":\"false\",\"order\":\"100\",\"max_length\":\"0\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-02-11 23:21:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>953affc487c525906afa65f30cbb3529</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDd13affc4a4c525905ea249c2fd852429</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_complex_object_953affc487c525906afa65f30cbb3529</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-02-11 23:21:21</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>
