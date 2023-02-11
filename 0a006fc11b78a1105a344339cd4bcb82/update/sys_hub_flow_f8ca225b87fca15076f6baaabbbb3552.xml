@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f8ca225b87fca15076f6baaabbbb3552</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Summarize Interaction</sys_name>
         <sys_overrides/>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_update_name>sys_hub_flow_f8ca225b87fca15076f6baaabbbb3552</sys_update_name>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-09 09:56:22</sys_updated_on>
+        <sys_updated_on>2023-02-09 13:29:54</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=f8ca225b87fca15076f6baaabbbb3552"/>
@@ -70,15 +70,15 @@
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
         <active>true</active>
-        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <data>{"run_on_extended":"false","run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any"}</data>
         <identifier>f8ca225b87fca15076f6baaabbbb3552</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-09 09:56:21</sys_created_on>
         <sys_id>12ce6ed38730e15076f6baaabbbb3531</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-09 09:56:21</sys_updated_on>
+        <sys_updated_on>2023-02-09 14:07:56</sys_updated_on>
         <trigger display_value="">ef3baf80870020109bada7da0acb0ba3</trigger>
     </sys_trigger_runner_mapping>
     <sys_trigger_runner_mapping action="delete_multiple" query="identifier=f8ca225b87fca15076f6baaabbbb3552^sys_idNOT IN12ce6ed38730e15076f6baaabbbb3531"/>
@@ -328,10 +328,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-09 09:46:54</sys_created_on>
         <sys_id>6f9ce25f87fca15076f6baaabbbb3516</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-09 09:56:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:43:27</sys_updated_on>
         <ui_id>c93e789c-170e-43d8-820c-38839e115b16</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6f9ce25f87fca15076f6baaabbbb3516"/>
@@ -390,10 +390,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-09 09:46:54</sys_created_on>
         <sys_id>739ce25f87fca15076f6baaabbbb3543</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-09 09:56:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:43:27</sys_updated_on>
         <ui_id>4c71d3c8-9642-40b7-a044-7e22631059f6</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=739ce25f87fca15076f6baaabbbb3543"/>
@@ -464,10 +464,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-09 09:46:54</sys_created_on>
         <sys_id>fb9ce25f87fca15076f6baaabbbb3538</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-09 09:56:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:43:27</sys_updated_on>
         <ui_id>dd693c23-2d7d-4edc-91d9-a6e113034633</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fb9ce25f87fca15076f6baaabbbb3538"/>
@@ -479,10 +479,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-09 09:46:54</sys_created_on>
         <sys_id>739ce25f87fca15076f6baaabbbb353b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-09 09:56:22</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"name$":"FD9a77d1c3b53ca1507d86cab1e480e6a2","$COCollectionField":[""]},"complexObjectSchema":{"FlowDesigner:FD9a77d1c3b53ca1507d86cab1e480e6a2":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD9a77d1c3b53ca1507d86cab1e480e6a2.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"History\",\"mandatory\":\"false\",\"child_name\":\"history_child0\",\"uiUniqueId\":\"bde4aba3-2269-428c-bccc-2215a61a0fd4\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD9a77d1c3b53ca1507d86cab1e480e6a2\",\"child_label\":\"History_child0\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.string\",\"child_type\":\"string\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"38bc4e4c-8d96-499d-af6e-fc49ca871055\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:43:27</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD9a77d1c3b53ca1507d86cab1e480e6a2":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD9a77d1c3b53ca1507d86cab1e480e6a2.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"History\",\"mandatory\":\"false\",\"child_name\":\"history_child0\",\"uiUniqueId\":\"bde4aba3-2269-428c-bccc-2215a61a0fd4\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD9a77d1c3b53ca1507d86cab1e480e6a2\",\"child_label\":\"History_child0\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.string\",\"child_type\":\"string\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"38bc4e4c-8d96-499d-af6e-fc49ca871055\"}"}},"complexObject":{"name$":"FD9a77d1c3b53ca1507d86cab1e480e6a2","$COCollectionField":[""]},"serializationFormat":"JSON"}</value>
         <variable display_value="History">5e77d1c3973ca15085b7b4cfe153afb3</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=fb9ce25f87fca15076f6baaabbbb3538"/>
@@ -720,11 +720,11 @@
         <sys_created_on>2023-02-09 09:46:53</sys_created_on>
         <sys_id>679ce25f87fca15076f6baaabbbb350a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_f8ca225b87fca15076f6baaabbbb3552_table_name_en</sys_update_name>
         <sys_updated_by>antonio</sys_updated_by>
         <sys_updated_on>2023-02-09 09:46:53</sys_updated_on>
         <url/>
@@ -743,11 +743,11 @@
         <sys_created_on>2023-02-09 09:46:53</sys_created_on>
         <sys_id>a39ce25f87fca15076f6baaabbbb3507</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_f8ca225b87fca15076f6baaabbbb3552_current_en</sys_update_name>
         <sys_updated_by>antonio</sys_updated_by>
         <sys_updated_on>2023-02-09 09:46:53</sys_updated_on>
         <url/>
@@ -759,9 +759,9 @@
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=f8ca225b87fca15076f6baaabbbb3552^sys_idNOT IN96ce6ed38730e15076f6baaabbbb3532"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
-        <plan/>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"96ce6ed38730e15076f6baaabbbb3532","name":"plan","plan_signature":null}}</plan>
         <plan_id>f8ca225b87fca15076f6baaabbbb3552</plan_id>
-        <snapshot>51ceead38730e15076f6baaabbbb35d8</snapshot>
+        <snapshot>a7707397db34219079007b47f49619ea</snapshot>
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-09 09:56:21</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -1454,11 +1454,11 @@
         <sys_created_on>2023-02-09 09:56:18</sys_created_on>
         <sys_id>19ceead38730e15076f6baaabbbb35f2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_51ceead38730e15076f6baaabbbb35d8_table_name_en</sys_update_name>
         <sys_updated_by>antonio</sys_updated_by>
         <sys_updated_on>2023-02-09 09:56:18</sys_updated_on>
         <url/>
@@ -1477,11 +1477,11 @@
         <sys_created_on>2023-02-09 09:56:18</sys_created_on>
         <sys_id>55ceead38730e15076f6baaabbbb35ea</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_51ceead38730e15076f6baaabbbb35d8_current_en</sys_update_name>
         <sys_updated_by>antonio</sys_updated_by>
         <sys_updated_on>2023-02-09 09:56:18</sys_updated_on>
         <url/>
@@ -1493,6 +1493,6 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>f8ca225b87fca15076f6baaabbbb3552</sys_id>
         <latest_snapshot>51ceead38730e15076f6baaabbbb35d8</latest_snapshot>
-        <compiler_build/>
+        <compiler_build>glide-tokyo-07-08-2022__patch4-11-23-2022_12-05-2022_2132.zip</compiler_build>
     </sys_hub_flow>
 </record_update>

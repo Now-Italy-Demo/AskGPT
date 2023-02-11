@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2c4eb1c88789e1906afa65f30cbb35c0" label="ChatGPT Agent_Chat Transcript" max_length="40" name="x_snc_askgpt_chatgpt_agent_chat_transcript" type="collection">
+        <element label="AI Suggestion" max_length="8000" name="ai_suggestion" type="string"/>
+        <element label="GPT training context" max_length="512" name="gpt_training_context" type="string"/>
+        <element dependent="interaction_table" dependent_on_field="interaction_table" display="true" label="Interaction" max_length="32" name="interaction" type="document_id" use_dependent_field="true"/>
+        <element label="Interaction Table" max_length="80" name="interaction_table" type="table_name"/>
+        <element label="Last Direction" max_length="32" name="last_direction" type="string"/>
+        <element label="Pre-training GPT prompt" max_length="8000" name="pre_training_gpt_prompt" type="string"/>
+        <element label="Transcript" max_length="10000" name="transcript" type="string"/>
+        <index name="index">
+            <element name="interaction"/>
+        </index>
+    </element>
+</database>

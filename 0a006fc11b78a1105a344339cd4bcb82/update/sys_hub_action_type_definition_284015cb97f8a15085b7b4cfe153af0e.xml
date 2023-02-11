@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>284015cb97f8a15085b7b4cfe153af0e</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Official_OpenAI_API</sys_name>
         <sys_overrides/>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_284015cb97f8a15085b7b4cfe153af0e</sys_update_name>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-09 09:53:50</sys_updated_on>
+        <sys_updated_on>2023-02-09 13:29:38</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -586,7 +586,7 @@
         <sys_created_on>2023-02-08 08:24:55</sys_created_on>
         <sys_id>f84015cb97f8a15085b7b4cfe153af88</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Credential Value</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -730,18 +730,6 @@
         <sys_updated_on>2023-02-08 08:24:55</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_b84015cb97f8a15085b7b4cfe153af36</table>
         <value>{{action.prompt}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>b84015cb97f8a15085b7b4cfe153af36</id>
-        <sys_created_by>antonio</sys_created_by>
-        <sys_created_on>2023-02-09 09:34:00</sys_created_on>
-        <sys_id>3ea92e9787fca15076f6baaabbbb350e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-09 09:34:00</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_b84015cb97f8a15085b7b4cfe153af36^id=b84015cb97f8a15085b7b4cfe153af36"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=b84015cb97f8a15085b7b4cfe153af36"/>
@@ -1260,7 +1248,7 @@
         <sys_created_on>2023-02-08 08:24:55</sys_created_on>
         <sys_id>b04015cb97f8a15085b7b4cfe153af64</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Chat</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -1283,7 +1271,7 @@
         <sys_created_on>2023-02-08 08:24:55</sys_created_on>
         <sys_id>bc4015cb97f8a15085b7b4cfe153af67</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>History</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -1932,7 +1920,7 @@
         <sys_created_on>2023-02-08 08:24:56</sys_created_on>
         <sys_id>414015cb97f8a15085b7b4cfe153afb3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>History JSON</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -1955,7 +1943,7 @@
         <sys_created_on>2023-02-08 08:24:55</sys_created_on>
         <sys_id>c94015cb97f8a15085b7b4cfe153afaf</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>History</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -1978,7 +1966,7 @@
         <sys_created_on>2023-02-08 08:24:55</sys_created_on>
         <sys_id>cd4015cb97f8a15085b7b4cfe153afab</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Response</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -3039,7 +3027,7 @@
         <sys_created_on>2023-02-08 08:24:54</sys_created_on>
         <sys_id>284015cb97f8a15085b7b4cfe153af1f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Prompt</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -3062,7 +3050,7 @@
         <sys_created_on>2023-02-08 08:24:54</sys_created_on>
         <sys_id>344015cb97f8a15085b7b4cfe153af2f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>History</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -3085,7 +3073,7 @@
         <sys_created_on>2023-02-08 08:38:55</sys_created_on>
         <sys_id>3973198f97f8a15085b7b4cfe153af47</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Model Name</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -3108,7 +3096,7 @@
         <sys_created_on>2023-02-08 08:24:54</sys_created_on>
         <sys_id>704015cb97f8a15085b7b4cfe153af2b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Max Token</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -3131,7 +3119,7 @@
         <sys_created_on>2023-02-08 08:24:54</sys_created_on>
         <sys_id>704015cb97f8a15085b7b4cfe153af33</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>History JSON</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -3154,7 +3142,7 @@
         <sys_created_on>2023-02-08 08:30:54</sys_created_on>
         <sys_id>a4a1d50f97f8a15085b7b4cfe153afee</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Direct Prompt</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -3177,7 +3165,7 @@
         <sys_created_on>2023-02-08 08:24:54</sys_created_on>
         <sys_id>e84015cb97f8a15085b7b4cfe153af25</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Temperature</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -3202,7 +3190,7 @@
         <sys_created_on>2023-02-08 08:24:56</sys_created_on>
         <sys_id>094015cb97f8a15085b7b4cfe153afc3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Response</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -3225,7 +3213,7 @@
         <sys_created_on>2023-02-08 08:24:56</sys_created_on>
         <sys_id>0d4015cb97f8a15085b7b4cfe153afc7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>History</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -3248,7 +3236,7 @@
         <sys_created_on>2023-02-08 08:24:56</sys_created_on>
         <sys_id>494015cb97f8a15085b7b4cfe153afcf</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>History JSON</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -3271,7 +3259,7 @@
         <sys_created_on>2023-02-08 08:24:56</sys_created_on>
         <sys_id>854015cb97f8a15085b7b4cfe153afd5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -3294,7 +3282,7 @@
         <sys_created_on>2023-02-08 08:24:56</sys_created_on>
         <sys_id>c94015cb97f8a15085b7b4cfe153afcb</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -3905,7 +3893,7 @@
         <sys_created_on>2023-02-08 08:56:26</sys_created_on>
         <sys_id>2a7715c3973ca15085b7b4cfe153af02</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Credential Value</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -4554,7 +4542,7 @@
         <sys_created_on>2023-02-08 08:56:27</sys_created_on>
         <sys_id>327715c3973ca15085b7b4cfe153af29</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>History</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -4577,7 +4565,7 @@
         <sys_created_on>2023-02-08 08:56:27</sys_created_on>
         <sys_id>367715c3973ca15085b7b4cfe153af25</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Response</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -4600,7 +4588,7 @@
         <sys_created_on>2023-02-08 08:56:27</sys_created_on>
         <sys_id>b67715c3973ca15085b7b4cfe153af2c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>History JSON</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -4744,18 +4732,6 @@
         <sys_updated_on>2023-02-08 08:56:26</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_ae77d1c3973ca15085b7b4cfe153afd4</table>
         <value>{{action.prompt}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>ae77d1c3973ca15085b7b4cfe153afd4</id>
-        <sys_created_by>antonio</sys_created_by>
-        <sys_created_on>2023-02-09 09:37:56</sys_created_on>
-        <sys_id>9c9aea1b87fca15076f6baaabbbb35b1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-09 09:37:56</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_ae77d1c3973ca15085b7b4cfe153afd4^id=ae77d1c3973ca15085b7b4cfe153afd4"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=ae77d1c3973ca15085b7b4cfe153afd4"/>
@@ -5274,7 +5250,7 @@
         <sys_created_on>2023-02-08 08:56:26</sys_created_on>
         <sys_id>2677d1c3973ca15085b7b4cfe153afef</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>History</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -5297,7 +5273,7 @@
         <sys_created_on>2023-02-08 08:56:26</sys_created_on>
         <sys_id>2a77d1c3973ca15085b7b4cfe153afeb</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Chat</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -6358,7 +6334,7 @@
         <sys_created_on>2023-02-08 08:56:25</sys_created_on>
         <sys_id>5677d1c3973ca15085b7b4cfe153afa8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Prompt</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -6381,7 +6357,7 @@
         <sys_created_on>2023-02-08 08:56:26</sys_created_on>
         <sys_id>6277d1c3973ca15085b7b4cfe153afb7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>History</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -6404,7 +6380,7 @@
         <sys_created_on>2023-02-08 08:56:26</sys_created_on>
         <sys_id>6677d1c3973ca15085b7b4cfe153afd0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Model Name</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -6427,7 +6403,7 @@
         <sys_created_on>2023-02-08 08:56:26</sys_created_on>
         <sys_id>6a77d1c3973ca15085b7b4cfe153afbe</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Direct Prompt</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -6450,7 +6426,7 @@
         <sys_created_on>2023-02-08 08:56:26</sys_created_on>
         <sys_id>6e77d1c3973ca15085b7b4cfe153afba</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>History JSON</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -6473,7 +6449,7 @@
         <sys_created_on>2023-02-08 08:56:25</sys_created_on>
         <sys_id>9a77d1c3973ca15085b7b4cfe153afad</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Temperature</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -6496,7 +6472,7 @@
         <sys_created_on>2023-02-08 08:56:26</sys_created_on>
         <sys_id>de77d1c3973ca15085b7b4cfe153afb2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Max Token</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -6521,7 +6497,7 @@
         <sys_created_on>2023-02-08 08:56:27</sys_created_on>
         <sys_id>727715c3973ca15085b7b4cfe153af4f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -6544,7 +6520,7 @@
         <sys_created_on>2023-02-08 08:56:27</sys_created_on>
         <sys_id>767715c3973ca15085b7b4cfe153af58</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -6567,7 +6543,7 @@
         <sys_created_on>2023-02-08 08:56:27</sys_created_on>
         <sys_id>7a7715c3973ca15085b7b4cfe153af3a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Response</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -6590,7 +6566,7 @@
         <sys_created_on>2023-02-08 08:56:27</sys_created_on>
         <sys_id>be7715c3973ca15085b7b4cfe153af52</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>History JSON</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -6613,7 +6589,7 @@
         <sys_created_on>2023-02-08 08:56:27</sys_created_on>
         <sys_id>f27715c3973ca15085b7b4cfe153af4b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>History</sys_name>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
@@ -6627,6 +6603,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>284015cb97f8a15085b7b4cfe153af0e</sys_id>
         <latest_snapshot>9e77d1c3973ca15085b7b4cfe153af9f</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch4a-01-03-2023_01-11-2023_0813.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch4-11-23-2022_12-05-2022_2132.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>
