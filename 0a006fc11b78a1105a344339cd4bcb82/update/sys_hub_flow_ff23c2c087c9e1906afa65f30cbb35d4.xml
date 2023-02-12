@@ -10,13 +10,13 @@
         <copied_from_name/>
         <description>Create chat transcript for Agent Chats in active interactions. </description>
         <internal_name>create_agent_chat_transcript</internal_name>
-        <label_cache>[{"name":"flow_variable.pre_training_context","label":"Flow Variables➛Pre-training Context","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"cdbbec43-e967-4749-89e7-3ad072d5ae08"}},{"name":"3be51189-fb21-4a66-b517-9464b24e6385.__dont_treat_as_error__","label":"3 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3be51189-fb21-4a66-b517-9464b24e6385.__action_status__","label":"3 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.Table","label":"1 - Look Up Record➛Interaction Table","reference":"interaction","reference_display":"Interaction","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.Record","label":"1 - Look Up Record➛Interaction Record","reference":"interaction","reference_display":"Interaction","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.Table","label":"1 - Look Up Records➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.Records","label":"1 - Look Up Records➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.conversation.sys_id","label":"Trigger - Record Created➛Conversation Message Record➛Conversation➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_cs_conversation","column_name":"sys_id"},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.Table","label":"1 - Look Up Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.Record","label":"1 - Look Up Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.Record","label":"3 - Look Up Record➛ChatGPT Agent_Chat Transcript Record","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.Table","label":"3 - Look Up Record➛ChatGPT Agent_Chat Transcript Table","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.status","label":"3 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.error_message","label":"3 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.__action_status__","label":"3 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.__dont_treat_as_error__","label":"3 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.Record.sys_id","label":"1 - Look Up Record➛Interaction Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"interaction","column_name":"sys_id"},{"name":"9c9993b3-a5ad-4b54-82b7-f06d1f63a61e.record","label":"6 - Update Record➛ChatGPT Agent_Chat Transcript Record","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c9993b3-a5ad-4b54-82b7-f06d1f63a61e.table_name","label":"6 - Update Record➛ChatGPT Agent_Chat Transcript Table","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c9993b3-a5ad-4b54-82b7-f06d1f63a61e.__action_status__","label":"6 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c9993b3-a5ad-4b54-82b7-f06d1f63a61e.__dont_treat_as_error__","label":"6 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.direction","label":"Trigger - Record Created➛Conversation Message Record➛Direction","reference":"","reference_display":"Direction","type":"choice","base_type":"choice","parent_table_name":"sys_cs_message","column_name":"direction","choices":[{"label":"-- None --","image":"","rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"used":false,"value":""},{"image":"","rawLabel":"Inbound","selected":false,"label":"Inbound","missing":false,"reference":false,"used":false,"value":"inbound","parameters":{"name":"sys_cs_message"}},{"image":"","rawLabel":"Outbound","selected":false,"label":"Outbound","missing":false,"reference":false,"used":false,"value":"outbound","parameters":{"name":"sys_cs_message"}}]},{"name":"73febe52-317f-4c85-929c-9c8402e010c9.record","label":"8 - Create Record➛ChatGPT Agent_Chat Transcript Record","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"73febe52-317f-4c85-929c-9c8402e010c9.table_name","label":"8 - Create Record➛ChatGPT Agent_Chat Transcript Table","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"73febe52-317f-4c85-929c-9c8402e010c9.__action_status__","label":"8 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"73febe52-317f-4c85-929c-9c8402e010c9.__dont_treat_as_error__","label":"8 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <label_cache>[{"name":"flow_variable.pre_training_context","label":"Flow Variables➛Pre-training Context","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"cdbbec43-e967-4749-89e7-3ad072d5ae08"}},{"name":"3be51189-fb21-4a66-b517-9464b24e6385.__dont_treat_as_error__","label":"3 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3be51189-fb21-4a66-b517-9464b24e6385.__action_status__","label":"3 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.Table","label":"1 - Look Up Record➛Interaction Table","reference":"interaction","reference_display":"Interaction","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.Record","label":"1 - Look Up Record➛Interaction Record","reference":"interaction","reference_display":"Interaction","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.Table","label":"1 - Look Up Records➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.Records","label":"1 - Look Up Records➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.conversation.sys_id","label":"Trigger - Record Created➛Conversation Message Record➛Conversation➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_cs_conversation","column_name":"sys_id"},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.Table","label":"1 - Look Up Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.Record","label":"1 - Look Up Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.Record","label":"3 - Look Up Record➛ChatGPT Agent_Chat Transcript Record","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.Table","label":"3 - Look Up Record➛ChatGPT Agent_Chat Transcript Table","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.status","label":"3 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.error_message","label":"3 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.__action_status__","label":"3 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.__dont_treat_as_error__","label":"3 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.Record.sys_id","label":"1 - Look Up Record➛Interaction Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"interaction","column_name":"sys_id"},{"name":"9c9993b3-a5ad-4b54-82b7-f06d1f63a61e.record","label":"6 - Update Record➛ChatGPT Agent_Chat Transcript Record","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c9993b3-a5ad-4b54-82b7-f06d1f63a61e.table_name","label":"6 - Update Record➛ChatGPT Agent_Chat Transcript Table","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c9993b3-a5ad-4b54-82b7-f06d1f63a61e.__action_status__","label":"6 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c9993b3-a5ad-4b54-82b7-f06d1f63a61e.__dont_treat_as_error__","label":"6 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.direction","label":"Trigger - Record Created➛Conversation Message Record➛Direction","reference":"","reference_display":"Direction","type":"choice","base_type":"choice","parent_table_name":"sys_cs_message","column_name":"direction","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"label":"Inbound","used":false,"image":"","reference":false,"rawLabel":"Inbound","selected":false,"missing":false,"value":"inbound","parameters":{"name":"sys_cs_message"}},{"label":"Outbound","used":false,"image":"","reference":false,"rawLabel":"Outbound","selected":false,"missing":false,"value":"outbound","parameters":{"name":"sys_cs_message"}}]},{"name":"73febe52-317f-4c85-929c-9c8402e010c9.record","label":"8 - Create Record➛ChatGPT Agent_Chat Transcript Record","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"73febe52-317f-4c85-929c-9c8402e010c9.table_name","label":"8 - Create Record➛ChatGPT Agent_Chat Transcript Table","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"73febe52-317f-4c85-929c-9c8402e010c9.__action_status__","label":"8 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"73febe52-317f-4c85-929c-9c8402e010c9.__dont_treat_as_error__","label":"8 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master_snapshot>9298d208874de1906afa65f30cbb3582</master_snapshot>
         <name>Create Agent Chat Transcript</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>42aeb204874125906afa65f30cbb352f</remote_trigger_id>
+        <remote_trigger_id>12aee8a41bc92110e79510a1b24bcb73</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ff23c2c087c9e1906afa65f30cbb35d4</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>Create Agent Chat Transcript</sys_name>
         <sys_overrides/>
         <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_update_name>sys_hub_flow_ff23c2c087c9e1906afa65f30cbb35d4</sys_update_name>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:11</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:49:00</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=ff23c2c087c9e1906afa65f30cbb35d4"/>
@@ -57,15 +57,15 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>antonio</sys_created_by>
-        <sys_created_on>2023-02-11 19:01:10</sys_created_on>
+        <sys_created_on>2023-02-12 21:49:00</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>42aeb204874125906afa65f30cbb352f</sys_id>
+        <sys_id>12aee8a41bc92110e79510a1b24bcb73</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:10</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:49:00</sys_updated_on>
         <table>sys_cs_message</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
@@ -74,14 +74,14 @@
         <identifier>ff23c2c087c9e1906afa65f30cbb35d4</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>antonio</sys_created_by>
-        <sys_created_on>2023-02-11 19:01:10</sys_created_on>
-        <sys_id>0eaeb204874125906afa65f30cbb352f</sys_id>
+        <sys_created_on>2023-02-12 21:49:00</sys_created_on>
+        <sys_id>daaee8a41bc92110e79510a1b24bcb73</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:10</sys_updated_on>
-        <trigger display_value="">42aeb204874125906afa65f30cbb352f</trigger>
+        <sys_updated_on>2023-02-12 21:49:00</sys_updated_on>
+        <trigger display_value="">12aee8a41bc92110e79510a1b24bcb73</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=ff23c2c087c9e1906afa65f30cbb35d4^sys_idNOT IN0eaeb204874125906afa65f30cbb352f"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=ff23c2c087c9e1906afa65f30cbb35d4^sys_idNOT INdaaee8a41bc92110e79510a1b24bcb73"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=ff23c2c087c9e1906afa65f30cbb35d4^sys_idNOT INff654ac487c9e1906afa65f30cbb3578"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -92,10 +92,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 14:51:09</sys_created_on>
         <sys_id>ff654ac487c9e1906afa65f30cbb3578</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:10</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:49:00</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -208,14 +208,14 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 14:51:09</sys_created_on>
         <sys_id>7f654ac487c9e1906afa65f30cbb3572</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_update_name/>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:10</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:49:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -291,14 +291,14 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 14:51:09</sys_created_on>
         <sys_id>fb654ac487c9e1906afa65f30cbb3569</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_update_name/>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:10</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:49:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -328,10 +328,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 15:53:43</sys_created_on>
         <sys_id>9cc3da8c870de1906afa65f30cbb35c2</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>58</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:48</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:51:06</sys_updated_on>
         <ui_id>73febe52-317f-4c85-929c-9c8402e010c9</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9cc3da8c870de1906afa65f30cbb35c2"/>
@@ -403,10 +403,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 15:49:06</sys_created_on>
         <sys_id>b4b2124c870de1906afa65f30cbb35bb</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:48</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:51:06</sys_updated_on>
         <ui_id>d24f1e4e-ecd6-46cb-b9a5-7ecc70164037</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b4b2124c870de1906afa65f30cbb35bb"/>
@@ -491,10 +491,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 15:28:32</sys_created_on>
         <sys_id>d3fd4e04870de1906afa65f30cbb35fc</sys_id>
-        <sys_mod_count>52</sys_mod_count>
+        <sys_mod_count>68</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:48</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:51:06</sys_updated_on>
         <ui_id>4e585091-7d16-4467-87b9-42f74ad2ca7b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d3fd4e04870de1906afa65f30cbb35fc"/>
@@ -579,10 +579,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 15:49:07</sys_created_on>
         <sys_id>fcb2124c870de1906afa65f30cbb35c6</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:48</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:51:06</sys_updated_on>
         <ui_id>9c9993b3-a5ad-4b54-82b7-f06d1f63a61e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fcb2124c870de1906afa65f30cbb35c6"/>
@@ -676,10 +676,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 15:36:01</sys_created_on>
         <sys_id>05bf4ec4870de1906afa65f30cbb3521</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:11</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:49:00</sys_updated_on>
         <ui_id>debf5a2a-7bb9-42ac-b6ad-75cfcd40ec49</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -748,10 +748,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 18:33:42</sys_created_on>
         <sys_id>b3583248870125906afa65f30cbb352c</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:11</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:49:00</sys_updated_on>
         <ui_id>c944de9f-d547-4cfa-9e67-4f7d55ad7326</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -765,10 +765,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 18:33:42</sys_created_on>
         <sys_id>37583248870125906afa65f30cbb352f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 18:33:42</sys_updated_on>
-        <value>Bancoposta IB</value>
+        <sys_updated_on>2023-02-12 21:48:46</sys_updated_on>
+        <value>Solana App</value>
         <variable display_value="Pre-training Context">bb583248870125906afa65f30cbb350c</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_ff23c2c087c9e1906afa65f30cbb35d4^id=b3583248870125906afa65f30cbb352c"/>
@@ -796,10 +796,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 15:49:06</sys_created_on>
         <sys_id>b4b2124c870de1906afa65f30cbb35bf</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:11</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:49:00</sys_updated_on>
         <ui_id>34299080-6e65-46f6-be23-c43ce6ac3c91</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -868,10 +868,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 15:53:43</sys_created_on>
         <sys_id>dcc3da8c870de1906afa65f30cbb35bc</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:11</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:49:00</sys_updated_on>
         <ui_id>f74bcc30-e61e-484f-a62b-acc81c4b7d42</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1020,18 +1020,18 @@
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"3a981608874de1906afa65f30cbb3543","name":"plan","plan_signature":null}}</plan>
         <plan_id>ff23c2c087c9e1906afa65f30cbb35d4</plan_id>
-        <snapshot>93ce7288db05259079007b47f49619a8</snapshot>
+        <snapshot>dd2fe4e41bc92110e79510a1b24bcbcd</snapshot>
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 16:14:55</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3a981608874de1906afa65f30cbb3543</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:10</sys_updated_on>
-        <trigger display_value="">42aeb204874125906afa65f30cbb352f</trigger>
+        <sys_updated_on>2023-02-12 21:49:00</sys_updated_on>
+        <trigger display_value="">12aee8a41bc92110e79510a1b24bcb73</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ff23c2c087c9e1906afa65f30cbb35d4"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
@@ -1045,7 +1045,7 @@
         <copied_from_name/>
         <description>Create chat transcript for Agent Chats in active interactions. </description>
         <internal_name>create_agent_chat_transcript</internal_name>
-        <label_cache>[{"name":"flow_variable.pre_training_context","label":"Flow Variables➛Pre-training Context","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"cdbbec43-e967-4749-89e7-3ad072d5ae08"}},{"name":"3be51189-fb21-4a66-b517-9464b24e6385.__dont_treat_as_error__","label":"3 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3be51189-fb21-4a66-b517-9464b24e6385.__action_status__","label":"3 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.Table","label":"1 - Look Up Record➛Interaction Table","reference":"interaction","reference_display":"Interaction","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.Record","label":"1 - Look Up Record➛Interaction Record","reference":"interaction","reference_display":"Interaction","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.Table","label":"1 - Look Up Records➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.Records","label":"1 - Look Up Records➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.conversation.sys_id","label":"Trigger - Record Created➛Conversation Message Record➛Conversation➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_cs_conversation","column_name":"sys_id"},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.Table","label":"1 - Look Up Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.Record","label":"1 - Look Up Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.Record","label":"3 - Look Up Record➛ChatGPT Agent_Chat Transcript Record","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.Table","label":"3 - Look Up Record➛ChatGPT Agent_Chat Transcript Table","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.status","label":"3 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.error_message","label":"3 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.__action_status__","label":"3 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.__dont_treat_as_error__","label":"3 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.Record.sys_id","label":"1 - Look Up Record➛Interaction Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"interaction","column_name":"sys_id"},{"name":"9c9993b3-a5ad-4b54-82b7-f06d1f63a61e.record","label":"6 - Update Record➛ChatGPT Agent_Chat Transcript Record","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c9993b3-a5ad-4b54-82b7-f06d1f63a61e.table_name","label":"6 - Update Record➛ChatGPT Agent_Chat Transcript Table","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c9993b3-a5ad-4b54-82b7-f06d1f63a61e.__action_status__","label":"6 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c9993b3-a5ad-4b54-82b7-f06d1f63a61e.__dont_treat_as_error__","label":"6 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.direction","label":"Trigger - Record Created➛Conversation Message Record➛Direction","reference":"","reference_display":"Direction","type":"choice","base_type":"choice","parent_table_name":"sys_cs_message","column_name":"direction","choices":[{"label":"-- None --","image":"","rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"used":false,"value":""},{"image":"","rawLabel":"Inbound","selected":false,"label":"Inbound","missing":false,"reference":false,"used":false,"value":"inbound","parameters":{"name":"sys_cs_message"}},{"image":"","rawLabel":"Outbound","selected":false,"label":"Outbound","missing":false,"reference":false,"used":false,"value":"outbound","parameters":{"name":"sys_cs_message"}}]},{"name":"73febe52-317f-4c85-929c-9c8402e010c9.record","label":"8 - Create Record➛ChatGPT Agent_Chat Transcript Record","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"73febe52-317f-4c85-929c-9c8402e010c9.table_name","label":"8 - Create Record➛ChatGPT Agent_Chat Transcript Table","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"73febe52-317f-4c85-929c-9c8402e010c9.__action_status__","label":"8 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"73febe52-317f-4c85-929c-9c8402e010c9.__dont_treat_as_error__","label":"8 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <label_cache>[{"name":"flow_variable.pre_training_context","label":"Flow Variables➛Pre-training Context","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"cdbbec43-e967-4749-89e7-3ad072d5ae08"}},{"name":"3be51189-fb21-4a66-b517-9464b24e6385.__dont_treat_as_error__","label":"3 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3be51189-fb21-4a66-b517-9464b24e6385.__action_status__","label":"3 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.Table","label":"1 - Look Up Record➛Interaction Table","reference":"interaction","reference_display":"Interaction","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.Record","label":"1 - Look Up Record➛Interaction Record","reference":"interaction","reference_display":"Interaction","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.Table","label":"1 - Look Up Records➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"29907a7c-2da9-4bda-9192-86bcfeb8675c.Records","label":"1 - Look Up Records➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.conversation.sys_id","label":"Trigger - Record Created➛Conversation Message Record➛Conversation➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_cs_conversation","column_name":"sys_id"},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.Table","label":"1 - Look Up Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"708413a1-7c2a-411f-97a5-b549769d114e.Record","label":"1 - Look Up Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.Record","label":"3 - Look Up Record➛ChatGPT Agent_Chat Transcript Record","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.Table","label":"3 - Look Up Record➛ChatGPT Agent_Chat Transcript Table","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.status","label":"3 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.error_message","label":"3 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.__action_status__","label":"3 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d24f1e4e-ecd6-46cb-b9a5-7ecc70164037.__dont_treat_as_error__","label":"3 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e585091-7d16-4467-87b9-42f74ad2ca7b.Record.sys_id","label":"1 - Look Up Record➛Interaction Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"interaction","column_name":"sys_id"},{"name":"9c9993b3-a5ad-4b54-82b7-f06d1f63a61e.record","label":"6 - Update Record➛ChatGPT Agent_Chat Transcript Record","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c9993b3-a5ad-4b54-82b7-f06d1f63a61e.table_name","label":"6 - Update Record➛ChatGPT Agent_Chat Transcript Table","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c9993b3-a5ad-4b54-82b7-f06d1f63a61e.__action_status__","label":"6 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c9993b3-a5ad-4b54-82b7-f06d1f63a61e.__dont_treat_as_error__","label":"6 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.direction","label":"Trigger - Record Created➛Conversation Message Record➛Direction","reference":"","reference_display":"Direction","type":"choice","base_type":"choice","parent_table_name":"sys_cs_message","column_name":"direction","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"label":"Inbound","used":false,"image":"","reference":false,"rawLabel":"Inbound","selected":false,"missing":false,"value":"inbound","parameters":{"name":"sys_cs_message"}},{"label":"Outbound","used":false,"image":"","reference":false,"rawLabel":"Outbound","selected":false,"missing":false,"value":"outbound","parameters":{"name":"sys_cs_message"}}]},{"name":"73febe52-317f-4c85-929c-9c8402e010c9.record","label":"8 - Create Record➛ChatGPT Agent_Chat Transcript Record","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"73febe52-317f-4c85-929c-9c8402e010c9.table_name","label":"8 - Create Record➛ChatGPT Agent_Chat Transcript Table","reference":"x_snc_askgpt_chatgpt_agent_chat_transcript","reference_display":"ChatGPT Agent_Chat Transcript","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"73febe52-317f-4c85-929c-9c8402e010c9.__action_status__","label":"8 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"73febe52-317f-4c85-929c-9c8402e010c9.__dont_treat_as_error__","label":"8 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master>true</master>
         <name>Create Agent Chat Transcript</name>
         <natlang/>
@@ -1062,7 +1062,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9298d208874de1906afa65f30cbb3582</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1070,7 +1070,7 @@
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_update_name/>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:09</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:48:58</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=9298d208874de1906afa65f30cbb3582"/>
@@ -1085,10 +1085,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 16:14:54</sys_created_on>
         <sys_id>2298d208874de1906afa65f30cbb35ff</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:10</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:49:00</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -1201,14 +1201,14 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 16:14:52</sys_created_on>
         <sys_id>5a98d208874de1906afa65f30cbb3584</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_update_name/>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:08</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:48:57</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1284,14 +1284,14 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 16:14:53</sys_created_on>
         <sys_id>9a98d208874de1906afa65f30cbb3596</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_update_name/>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:08</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:48:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1321,10 +1321,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 16:14:54</sys_created_on>
         <sys_id>2298d208874de1906afa65f30cbb35eb</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:08</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:48:58</sys_updated_on>
         <ui_id>d24f1e4e-ecd6-46cb-b9a5-7ecc70164037</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2298d208874de1906afa65f30cbb35eb"/>
@@ -1409,10 +1409,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 16:14:54</sys_created_on>
         <sys_id>6298d208874de1906afa65f30cbb35e1</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:08</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:48:58</sys_updated_on>
         <ui_id>4e585091-7d16-4467-87b9-42f74ad2ca7b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6298d208874de1906afa65f30cbb35e1"/>
@@ -1497,10 +1497,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 16:14:54</sys_created_on>
         <sys_id>ee98d208874de1906afa65f30cbb35f3</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:08</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:48:58</sys_updated_on>
         <ui_id>9c9993b3-a5ad-4b54-82b7-f06d1f63a61e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ee98d208874de1906afa65f30cbb35f3"/>
@@ -1584,10 +1584,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 16:14:54</sys_created_on>
         <sys_id>ee98d208874de1906afa65f30cbb35fc</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:09</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:48:58</sys_updated_on>
         <ui_id>73febe52-317f-4c85-929c-9c8402e010c9</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ee98d208874de1906afa65f30cbb35fc"/>
@@ -1669,10 +1669,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 16:14:53</sys_created_on>
         <sys_id>1298d208874de1906afa65f30cbb35a3</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:08</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:48:58</sys_updated_on>
         <ui_id>debf5a2a-7bb9-42ac-b6ad-75cfcd40ec49</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1741,10 +1741,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 16:14:53</sys_created_on>
         <sys_id>a698d208874de1906afa65f30cbb35d4</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:09</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:48:58</sys_updated_on>
         <ui_id>f74bcc30-e61e-484f-a62b-acc81c4b7d42</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1775,10 +1775,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 16:14:53</sys_created_on>
         <sys_id>e298d208874de1906afa65f30cbb35ab</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:08</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:48:58</sys_updated_on>
         <ui_id>34299080-6e65-46f6-be23-c43ce6ac3c91</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1847,10 +1847,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 18:54:02</sys_created_on>
         <sys_id>ed0dfe00874125906afa65f30cbb3511</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 19:01:08</sys_updated_on>
+        <sys_updated_on>2023-02-12 21:48:58</sys_updated_on>
         <ui_id>c944de9f-d547-4cfa-9e67-4f7d55ad7326</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1864,10 +1864,10 @@
         <sys_created_by>antonio</sys_created_by>
         <sys_created_on>2023-02-11 18:54:02</sys_created_on>
         <sys_id>a10dfe00874125906afa65f30cbb3515</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>antonio</sys_updated_by>
-        <sys_updated_on>2023-02-11 18:54:02</sys_updated_on>
-        <value>Bancoposta IB</value>
+        <sys_updated_on>2023-02-12 21:48:57</sys_updated_on>
+        <value>Solana App</value>
         <variable display_value="Pre-training Context">dd0dbe00874125906afa65f30cbb35d8</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_9298d208874de1906afa65f30cbb3582^id=ed0dfe00874125906afa65f30cbb3511"/>
