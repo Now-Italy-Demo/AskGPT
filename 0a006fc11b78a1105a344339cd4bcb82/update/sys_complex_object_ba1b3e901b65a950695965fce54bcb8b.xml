@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDf61b3e902265a9506542be43461fd68b</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>0a006fc11b78a1105a344339cd4bcb82</scope_name>
+        <serialized_content>{"FlowDesigner:FDf61b3e902265a9506542be43461fd68b":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDf61b3e902265a9506542be43461fd68b.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"pwd2droppable\":\"true\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"History\",\"mandatory\":\"false\",\"child_name\":\"history_child0\",\"uiUniqueId\":\"f71f3217-f2bf-4049-b9b1-944b9926ba44\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FDf61b3e902265a9506542be43461fd68b\",\"child_label\":\"History_child0\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"24dee95b-7d33-4079-9186-76f01ece3ae2\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-03-09 09:55:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ba1b3e901b65a950695965fce54bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDf61b3e902265a9506542be43461fd68b</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_complex_object_ba1b3e901b65a950695965fce54bcb8b</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-03-09 09:55:31</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

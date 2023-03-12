@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="INSERT_OR_UPDATE">
+        <configuration_template/>
+        <connection_type>http_connection</connection_type>
+        <id>x_snc_askgpt.OpenAI_ChatGPT_Official</id>
+        <multiple_connections>false</multiple_connections>
+        <name>OpenAI_ChatGPT_Official</name>
+        <parent/>
+        <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2023-03-08 08:55:29</sys_created_on>
+        <sys_id>66b36d481be12950695965fce54bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_askgpt.OpenAI_ChatGPT_Official</sys_name>
+        <sys_package display_value="AskGPT" source="x_snc_askgpt">0a006fc11b78a1105a344339cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AskGPT">0a006fc11b78a1105a344339cd4bcb82</sys_scope>
+        <sys_update_name>sys_alias_66b36d481be12950695965fce54bcb8a</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2023-03-08 08:55:29</sys_updated_on>
+        <type>connection</type>
+    </sys_alias>
+</record_update>

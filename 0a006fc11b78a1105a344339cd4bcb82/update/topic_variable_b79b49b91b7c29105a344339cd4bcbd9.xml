@@ -39,7 +39,7 @@
         <limit/>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <model display_value="Ask SalesOps AI">739b49b91b7c29105a344339cd4bcbd8</model>
+        <model display_value="Ask Solana App">739b49b91b7c29105a344339cd4bcbd8</model>
         <model_id>739b49b91b7c29105a344339cd4bcbd8</model_id>
         <model_table/>
         <name>var__m_topic_variable_739b49b91b7c29105a344339cd4bcbd8</name>
@@ -81,5 +81,5 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </topic_variable>
-    <sys_element_mapping action="delete_multiple" query="id=b79b49b91b7c29105a344339cd4bcbd9"/>
+    <sys_element_mapping action="delete_multiple" query="id=5dda9e9787f0ed506afa65f30cbb35f4"/>
 </record_update>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="all_tables.query_hints=true,email_client=true,hasWorkflow=true,live_feed=true,query_hints=true" audit="true" db_object_id="b34b9b3787b311106afa65f30cbb3542" extends="task" label="Incident" max_length="40" name="incident" text_index="true" type="collection">
         <element label="Activity Stream Summary" max_length="2048" name="x_snc_askgpt_activity_stream_summary" type="string"/>
+        <element label="Virtual Agent Interaction Summary" max_length="2048" name="x_snc_askgpt_virtual_agent_interaction_summary" type="string"/>
     </element>
 </database>
